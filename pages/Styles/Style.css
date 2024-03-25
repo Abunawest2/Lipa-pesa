@@ -1,0 +1,298 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    margin-bottom: 40px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+}
+
+
+/* Header styles */
+header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #006e00; /* Green */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-logo {
+    max-height: 5vh;
+    margin: 0 10px;
+    /* border: solid red; */
+}
+
+.logo img{
+    max-height: 4em;
+}
+
+.menu-links ul{
+    /* border: solid red; */
+    list-style-type: none;
+    display: flex;
+}
+.menu-links ul li{
+    padding: 1vw;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+}
+li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Dropdown styles */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /* bottom: -1; */
+    right: 4px;
+    background-color: #ffffff;
+    min-width: max-content;
+    z-index: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    border-radius: 10px;
+    color: black;
+    padding: 20px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown on hover */
+nav ul li:hover .dropdown-content {
+    /* text-align: center; */
+    display: block;
+}
+
+.small-screen{
+    display: none;
+}
+
+/* Main styles for Index Page */
+
+.features h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.features p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #0000FF; /* Blue */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #000099; /* Darker blue */
+}
+
+/* Benefits section styles */
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.benefit {
+    flex: 1;
+    margin: 0 20px;
+    max-width: 300px;
+}
+
+.benefit img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.benefit h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 16px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #FF0000; /* Red */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    .benefit {
+        flex-basis: 45%;
+        margin: 10px;
+    }
+
+    .big-screen{
+        display: none;
+    }
+
+    .small-screen {
+        position: sticky;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: #006e00; /* Green */
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .benefit {
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Dashbord Style */
+
+/* Main styles */
+
+.dashboard {
+    margin: 20px;
+    background-color: #f3d677; /* Light yellow background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+.dashboard h1 {
+    color: #333; /* Dark text color */
+}
+
+.account-info {
+    background-color: #e9be5bd0; /* Light yellow background color for account info */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.actions button {
+    background-color: #ffc107; /* Yellow background color for buttons */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.actions button:hover {
+    background-color: #ffca28; /* Darker yellow on hover */
+}
+
+
+.banner{
+    position: relative;
+    background-color: #1ebd1e75; /* Green */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner a img{
+    height: 15rem;
+}
+
+/* NOTIFICATIONS STYLING */
+
+    /* Main styles */
+    main {
+        padding: 50px;
+        text-align: center;
+        background-color: #f9f7f7; /* Light gray background color */
+    }
+    
+    .notifications {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .notifications h1{
+        margin-bottom: 20px;
+    }
+    .notification {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .notification .date {
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 5px;
+    }
+    
+    .notification .message {
+        color: #666;
+    }
+
+    /* SETTING STYLING */
+    

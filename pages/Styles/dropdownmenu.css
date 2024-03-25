@@ -1,0 +1,58 @@
+/* Menu styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0070ba;
+    padding: 10px 20px;
+}
+
+.menu-toggle {
+    display: none; /* Hide by default on larger screens */
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Responsive menu */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Hide by default on smaller screens */
+        flex-direction: column;
+        background-color: #00518f;
+        padding: 20px;
+        position: absolute;
+        top: 60px; /* Adjust as needed based on your header height */
+        left: 0;
+        right: 0;
+    }
+
+    .menu-toggle {
+        display: block; /* Show toggle button on smaller screens */
+    }
+}

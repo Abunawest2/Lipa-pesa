@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - LipaPesa</title>
+    <link rel="stylesheet" href="./Styles/Style.css">
+</head>
+<body>
+    <header class="banner">
+        <a href="./index.html"><img src="/logoLP.png" alt="LOGO"></a>
+    </header>
+    <header class="big-screen">
+        <div class="logo">
+            <img src="/logoLP.png" alt="LipaPesa">
+        </div>
+        <nav class="menu-links menu">
+            <ul>
+                <li><a href="notification.html">Notification</a></li>
+                <li><a href="setting.html">Settings</li>
+                <li>
+                    <a href="#drop" onclick="dropDownDisplay">Account</a>
+                    <div class="dropdown-content" id="drop">
+                        <a href="logout.html">Logout</a>
+                        <a href="update-profile.html">Update Profile</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <header class="small-screen">
+        <div class="logo">
+            <img src="/logoLP.png" alt="LipaPesa">
+        </div>
+        <nav class="menu-links menu">
+            <ul>
+                <li><a href="notification.html"><img class="image-logo" src="/notification.png" alt="Notification"></a></li>
+                <li><a href="setting.html"><img class="image-logo" src="/settings.png" alt="settings"></a></li>
+                <li>
+                    <a href="#drop" onclick="dropDownDisplay"><img class="image-logo" src="/User.png" alt="Profile"></a>
+                    <div class="dropdown-content" id="drop">
+                        <a href="logout.html">Logout</a>
+                        <a href="update-profile.html">Update Profile</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-dashboard">
+        <section class="dashboard">
+            <h1>Welcome to Your Dashboard</h1>
+            <div class="account-info">
+                <h2>Account Balance</h2>
+                <p>$1,000.00</p>
+            </div>
+            <div class="actions">
+                <button>Send Money</button>
+                <button>Request Money</button>
+                <button>View Transactions</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="footer">
+        <p>&copy; 2024 LipaPesa App. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Highlight active menu link
+        document.addEventListener('DOMContentLoaded', function() {
+            const dashboardLink = document.getElementById('dashboard-link');
+            const currentLocation = window.location.pathname;
+            if (currentLocation.includes('dashboard')) {
+                dashboardLink.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>

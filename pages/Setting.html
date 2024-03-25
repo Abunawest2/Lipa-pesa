@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - LipaPesa</title>
+    <link rel="stylesheet" href="./Styles/Style.css">
+</head>
+<style>
+    /* Main styles */
+
+.settings {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.settings h1 {
+    margin-bottom: 10px;
+}
+
+.setting {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.setting h2 {
+    color: #333; /* Dark text color */
+    margin-bottom: 10px;
+}
+
+.setting p {
+    color: #666; /* Gray text color */
+    margin-bottom: 15px;
+}
+
+.setting button {
+    background-color: #0070ba; /* Blue background color for buttons */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.setting button:hover {
+    background-color: #005b91; /* Darker blue on hover */
+}
+
+</style>
+<body>
+    <header class="banner">
+        <a href="./index.html"><img src="/logoLP.png" alt="LOGO"></a>
+    </header>
+    <header>
+        <div class="logo">
+            <a href="dashboard.html"><img class="image-logo logo" src="/logoLP.png" alt="LipaPesa"></a>
+        </div>
+        <nav id="icons-nav" class="menu-links">
+            <ul id="iconsImage">
+                <li><a href="notification.html"><img class="image-logo" src="/notification.png" alt="Notification"></a></li>
+                <li><a href="setting.html"><img class="image-logo" src="/settings.png" alt="settings"></a></li>
+                <li>
+                    <a href="#drop" onclick="dropDownDisplay"><img class="image-logo" src="/User.png" alt="Profile"></a>
+                    <div class="dropdown-content" id="drop">
+                        <a href="logout.html">Logout</a>
+                        <a href="update-profile.html">Update Profile</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="settings">
+            <h1>Settings</h1>
+            <div class="setting">
+                <h2>Account Settings</h2>
+                <p>Manage your account information and preferences.</p>
+                <button>Edit Account</button>
+            </div>
+            <div class="setting">
+                <h2>Notification Settings</h2>
+                <p>Manage your notification preferences.</p>
+                <button>Edit Notifications</button>
+            </div>
+            <div class="setting">
+                <h2>Privacy Settings</h2>
+                <p>Manage your privacy preferences.</p>
+                <button>Edit Privacy</button>
+            </div>
+            <div class="setting">
+                <h2>Security Settings</h2>
+                <p>Manage your security preferences.</p>
+                <button>Edit Security</button>
+            </div>
+            <div class="setting">
+                <h2>Language Settings</h2>
+                <p>Manage your language preferences.</p>
+                <button>Edit Language</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="footer">
+        <p>&copy; 2024 LipaPesa App. All rights reserved.</p>
+    </footer>
+</body>
+</html>

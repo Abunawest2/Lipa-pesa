@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications - LipaPesa</title>
+    <link rel="stylesheet" href="./Styles/Style.css">
+</head>
+<body>
+    <header class="banner">
+        <a href="./index.html"><img src="/logoLP.png" alt="LOGO"></a>
+    </header>
+    <header>
+        <div class="logo">
+            <a href="dashboard.html"><img class="image-logo logo" src="/logoLP.png" alt="LipaPesa"></a>
+        </div>
+        <nav id="icons-nav" class="menu-links">
+            <ul id="iconsImage">
+                <li><a href="notification.html"><img class="image-logo" src="/notification.png" alt="Notification"></a></li>
+                <li><a href="setting.html"><img class="image-logo" src="/settings.png" alt="settings"></a></li>
+                <li>
+                    <a href="#drop" onclick="dropDownDisplay"><img class="image-logo" src="/User.png" alt="Profile"></a>
+                    <div class="dropdown-content" id="drop">
+                        <a href="logout.html">Logout</a>
+                        <a href="update-profile.html">Update Profile</a>
+                    </div>
+                </li>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="notifications">
+            <h1>Notifications</h1>
+            <div class="notification">
+                <p class="date">2024-03-15</p>
+                <p class="message">Your payment of $50.00 to John Doe was successful.</p>
+            </div>
+            <div class="notification">
+                <p class="date">2024-03-14</p>
+                <p class="message">You have a new message from Jane Smith.</p>
+            </div>
+            <!-- More notifications can be added here -->
+        </section>
+    </main>
+    
+    <footer id="footer" style="position: fixed;">
+        <p>&copy; 2024 LipaPesa App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
