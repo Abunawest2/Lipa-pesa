@@ -1,34 +1,25 @@
-// Smooth scrolling
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+const menu = document.getElementById("menu-bar");
+const smallmenu = document.getElementById("small-menu");
+const banner = document.querySelector("logo");
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+console.log(menu)
 
-// Form validation (dummy example)
-const form = document.querySelector('form');
-form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    if (!email || !password) {
-        alert('Please fill in all fields');
-    } else {
-        // Form is valid, submit it or perform other actions
-        alert('Form submitted!');
+const display = () => {
+    if (smallmenu.style.display === "none") {
+        smallmenu.style.display = "flex"
+        banner[0].style.display = "none"
+    } else{
+        smallmenu.style.display = "none"
     }
-});
+}
 
+// document.addEventListener('click', function(event) {
+//     const targetElement = event.target; // clicked element
 
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('.menu');
+//     if (!targetElement.closest('#small-menu') && !targetElement.closest('#menu')) {
+//         // Close the menu if the click is outside of hidden-screen and menu-icon
+//         smallmenu.style.display = 'none';
+//     }
+// });
 
-    menuToggle.addEventListener('click', function() {
-        menu.classList.toggle('active');
-    });
-});
+menu.addEventListener('click', display)
