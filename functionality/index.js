@@ -1,8 +1,53 @@
-const menu = document.getElementById("menu-bar");
+// const menu = document.getElementById("menu-bar");
 const smallmenu = document.getElementById("small-menu");
-const banner = document.querySelector("logo");
+const left_side_section = document.getElementById("left-side");
+const small_screen_section = document.getElementById("small-screen-style");
+const iconId = document.getElementById("iconId");
+const menu_icon = document.getElementsByTagName("i");
+const banner = document.getElementById("header");
+const main_layout = document.getElementById("main-layout");
 
-console.log(menu)
+// menu_icon[0].style.display = "none"
+
+console.log(document)
+
+iconId.addEventListener('click', () => {
+    if (left_side_section.style.display === 'none') {
+        left_side_section.style.display = 'flow-root'
+        main_layout.classList.toggle('main-section-new-margin')
+        main_layout.classList.add("scrol");
+
+        for (const nav of document.getElementsByTagName('nav')) {
+            nav.style.borderLeft = '1px solid black'
+        }
+        document.getElementsByTagName('nav').style.b
+    } else {
+        left_side_section.style.display = 'none'
+        main_layout.classList.remove('main-section-new-margin')
+        main_layout.classList.remove("scrol");
+        for (const nav of document.getElementsByTagName('nav')) {
+            nav.style.borderLeft = 'none'
+        }
+
+    }
+})
+
+// left_side_section.addEventListener('click', (event) => {
+//     if (event.target.tagName === 'a') {
+//         event.stopPropagation(); // Prevent the body click event from triggering
+//     } else{
+//         left_side_section.style.display = 'flow-root'
+//     }
+// });
+
+
+
+
+
+
+
+
+// console.log(menu)
 
 const display = () => {
     if (smallmenu.style.display === "none") {
@@ -22,4 +67,4 @@ const display = () => {
 //     }
 // });
 
-menu.addEventListener('click', display)
+// menu.addEventListener('click', display)

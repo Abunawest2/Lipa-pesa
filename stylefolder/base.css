@@ -9,33 +9,33 @@ body {
     font-style: normal;
     margin-bottom: 100px;
     text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: hsl(0, 0%, 100%);
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    background-color: #f2f2f2;
 }
 
 /* Header and div Section */
 
 header{
     background-image: url(../images/logoLP.png);
-    background-color: rgb(135, 179, 250);
+    background-color: #1ebd1e75;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     background-blend-mode: color-dodge;
     height: 30vh;
-    border-bottom: 5px solid white;
+    border-bottom: 5px solid yellow;
 }
 
 nav{
     padding: 10px 20px;
     position: sticky;
     top: 0;
-    border-bottom: 5px solid green;
     /* width: 100%; */
-    background-color: rgb(20, 20, 20);
+    background-color: #006e00; /* Green */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* border-left: ; */
 }
 
 a {
@@ -60,10 +60,10 @@ ul li{
     padding: 0 5px;
 }
 
-
-.login-title:hover{
-    color: blue;
+.small-screens > *:hover{
+    color:#dfc1c1;
 }
+
 
 #menu-bar{
     display: none;
@@ -132,35 +132,150 @@ main{
 }
 
 
-nav.small-screens{
+/* New layout */
+#small-screen-style{
     display: none;
 }
+
+i{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* section.left-side{
+    display: none;
+    background-color: #f2f2f2;
+    overflow-y: auto;
+} */
+
+
+section.side-menu{
+    padding: 0 20px 10px 20px;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.small-screens-list a, .share a{
+    display: flex;
+    align-items: center;
+
+}
+h5{
+    margin-left: 10px;
+
+}
+
+
+
+.small-screens-list:hover, .share a:hover{
+    color: yellow;
+    border-bottom: 2px solid #006e00;
+}
+
+
+section.side-menu .links-div ul{
+    display: flex;
+    flex-direction: column;
+}
+
+section.side-menu .links-div ul li{
+    padding: 20px 0;
+}
+
+section.side-menu .share{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.share a{
+    padding: 20px 0;
+}
+
+
+
 
 
 /* Medium and small screen */
 
-@media screen and (max-width: 540px) {
-
-    #menu-bar{
-        display: block;
-    }
-
-    nav.big-screen ul, .login-title h1{
-        display: none;
-    }
-    
-    nav.small-screens{
-        display: flex;
-        justify-content: space-between;
-    }
+@media screen and (max-width: 740px) {
 
     .app-title{
-        font-size: 20px;
+        font-size: x-large;
     }
 
-    ul li{
-        display: inline-block;
-        padding: 0 10px;
+
+    .big-screen-style{
+        display: none;
+    }
+
+    section.main-section{
+        padding-bottom: 50px;
+    }
+
+    section.main-section{
+        padding-bottom: 50px;
+    }
+
+    section.main-section-new-margin{
+        padding-bottom: 50px;
+        margin-left: 40%;
+    }
+
+    #small-screen-style{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        height: 50vh;
+    }
+
+    .scrol:disabled {
+        overflow: hidden;
+    }
+
+    .left-side{
+        display: none;
+        background-color: #f2f2f2;
+        overflow-y: auto;
+    }
+
+    .left-side{
+        background-color: #006e00b9;
+        position: fixed;
+        top: 0;
+        width: 40%;
+        height: 100vh;
+    }
+
+    div.image-div{
+        background-color: #006e00;
+        display: flex;
+        justify-content: flex-start;
+        border-right: 10px solid #006e00;
+    }
+
+    div.image-div img{
+        padding: 6.5px 0 6.5px 6.5px;
+        margin-left: 10px;
+    }
+
+    div.image-div h3{
+        margin-left: -10;
+        margin: auto;
+        color: white;
+    }
+
+    .share{
+        border-top: 2px solid whitesmoke;
+    }
+
+    section.side-menu{
+        color: black;
+        position: sticky;
+        
     }
 }
 
@@ -169,13 +284,8 @@ nav.small-screens{
 /* footer section */
 
 footer{
-    border-top: 5px solid white;
-    background-image: linear-gradient(rgb(135, 180, 250), rgb(135, 180, 250));
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-blend-mode:color-dodge;
-    /* background-color: rgb(135, 180, 250); */
+    border-top: 5px solid rgb(0, 0, 0);
+    background-color: #FF0000;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -184,4 +294,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer p{
+    font-weight: 600;
 }
