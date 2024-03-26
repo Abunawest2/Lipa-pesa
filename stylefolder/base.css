@@ -105,8 +105,9 @@ main{
 
 /* Benefits section styles */
 .benefits {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     margin: 30px 0;
 }
 
@@ -171,7 +172,6 @@ h5{
 
 
 .small-screens-list:hover, .share a:hover{
-    color: yellow;
     border-bottom: 2px solid #006e00;
 }
 
@@ -201,7 +201,8 @@ section.side-menu .share{
 
 /* Medium and small screen */
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 575px) {
+    /* Styles for screens with a width between 541px and 720px */
 
     .app-title{
         font-size: x-large;
@@ -283,25 +284,119 @@ section.side-menu .share{
         box-shadow: 2px 5px 20px rgba(180, 180, 180, 0.993);
     }
     section.benefits{
+        flex-wrap: wrap;
         border-radius: 10px;
         padding: 25px 0 10px 0;
         box-shadow: 2px 5px 20px rgba(180, 180, 180, 0.993);
     }
     div.benefit{
         border-radius: 10px;
-        width: 100%;
+        box-shadow: 2px 5px 20px rgba(180, 180, 180, 0.993);
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+  }
+
+@media screen and (max-width: 400px) {
+
+    .app-title{
+        font-size: x-large;
+    }
+
+
+    .big-screen-style{
+        display: none;
+    }
+
+    section.main-section{
+        padding-bottom: 50px;
+    }
+
+    section.main-section{
+        padding-bottom: 50px;
+    }
+
+    section.main-section-new-margin{
+        padding-bottom: 50px;
+        margin-left: 40%;
+    }
+
+    #small-screen-style{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        height: 50vh;
+    }
+
+    .scrol:disabled {
+        overflow: hidden;
+    }
+
+    .left-side{
+        display: none;
+        background-color: #f2f2f2;
+        overflow-y: auto;
+    }
+
+    .left-side{
+        background-color: #006e00b9;
+        position: fixed;
+        top: 0;
+        width: 40%;
+        height: 100vh;
+    }
+
+    div.image-div{
+        background-color: #006e00;
+        display: flex;
+        justify-content: flex-start;
+        box-shadow: 2px 2px 20px rgba(135, 230, 132, 0.8);
+    }
+
+    div.image-div img{
+        padding: 6.5px 0 6.5px 6.5px;
+        margin-left: 10px;
+    }
+
+    div.image-div h3{
+        margin-left: -10;
+        margin: auto;
+        color: white;
+    }
+
+    .share{
+        border-top: 2px solid whitesmoke;
+    }
+
+    section.side-menu{
+        color: black;
+        position: sticky;
+        
+    }
+
+    section.features{
+        border-radius: 10px;
+        padding: 25px;
+        box-shadow: 2px 5px 20px rgba(180, 180, 180, 0.993);
+    }
+    section.benefits{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        padding: 25px 0 10px 0;
+        box-shadow: 2px 5px 20px rgba(180, 180, 180, 0.993);
+    }
+    div.benefit{
+        width: 80%;
+        border-radius: 10px;
         box-shadow: 2px 5px 20px rgba(180, 180, 180, 0.993);
         padding: 10px;
         margin-bottom: 20px;
     }
 
-
-
-
-
-
-
 }
+
+
 
 
 
