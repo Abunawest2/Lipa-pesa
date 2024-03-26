@@ -4,58 +4,71 @@
 }
 
 body {
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-weight: 100;
+    font-style: normal;
     margin-bottom: 100px;
     text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: hsla(56, 59%, 67%, 0.5);
+    background-color: hsl(0, 0%, 100%);
 }
 
 /* Header and div Section */
 
 header{
     background-image: url(../images/logoLP.png);
-    background-color: rgb(135, 180, 250);
+    background-color: rgb(135, 179, 250);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-blend-mode:color-dodge;
+    background-blend-mode: color-dodge;
     height: 30vh;
     border-bottom: 5px solid white;
 }
 
 nav{
+    padding: 10px 20px;
     position: sticky;
     top: 0;
     border-bottom: 5px solid green;
-    width: 100%;
-    background-color: rgb(17, 17, 17);
-    display: grid;
-    grid-template-columns: 10% 80%;
-    gap: 10%;
-}
-
-.image-logo{
-    width: 50pt;
-    height: 80%;
-    margin: 10px 0;
-}
-
-ul{
-    list-style: none;
+    /* width: 100%; */
+    background-color: rgb(20, 20, 20);
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
-
-ul li{
-    padding-right: 2.5%;
-}
-
 
 a {
     text-decoration: none;
     color: white;
     font-weight: 700;
+}
+
+.app-title{
+    color: white;
+    width: fit-content;
+    cursor: pointer;
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 30px;
+}
+
+
+ul li{
+    display: inline-block;
+    padding: 0 5px;
+}
+
+
+.login-title:hover{
+    color: blue;
+}
+
+#menu-bar{
+    display: none;
+    color: white;
+    font-size: 20px;
 }
 
 /* Main Section for Index.html page */
@@ -95,8 +108,7 @@ main{
 .benefits {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    /* margin: 30px; */
+    margin: 30px;
 }
 
 .benefit {
@@ -118,6 +130,40 @@ main{
 .benefit p {
     font-size: 16px;
 }
+
+
+nav.small-screens{
+    display: none;
+}
+
+
+/* Medium and small screen */
+
+@media screen and (max-width: 540px) {
+
+    #menu-bar{
+        display: block;
+    }
+
+    nav.big-screen ul, .login-title h1{
+        display: none;
+    }
+    
+    nav.small-screens{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .app-title{
+        font-size: 20px;
+    }
+
+    ul li{
+        display: inline-block;
+        padding: 0 10px;
+    }
+}
+
 
 
 /* footer section */
