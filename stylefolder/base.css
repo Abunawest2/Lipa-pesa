@@ -30,7 +30,7 @@ nav{
     padding: 10px 20px;
     position: sticky;
     top: 0;
-    height: 40px;
+    height: 35px;
     background-color: #006e00; /* Green */
     display: flex;
     justify-content: space-between;
@@ -275,6 +275,13 @@ section.side-menu .share{
         color: black;
         position: sticky;
         
+    }
+    section.benefits{
+        background-color: aqua;
+    }
+    div.benefit{
+        background-color: #0000FF;
+        margin-bottom: 20px;
     }
 }
 
