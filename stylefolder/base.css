@@ -30,12 +30,11 @@ nav{
     padding: 10px 20px;
     position: sticky;
     top: 0;
-    /* width: 100%; */
+    height: 40px;
     background-color: #006e00; /* Green */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border-left: ; */
 }
 
 a {
