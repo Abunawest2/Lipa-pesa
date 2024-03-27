@@ -16,6 +16,7 @@ iconId.addEventListener('click', () => {
         left_side_section.style.display = 'flow-root'
         main_layout.classList.toggle('main-section-new-margin')
         main_layout.classList.add("scrol");
+        document.getElementById('small-screen-app-title').style.display = 'none'
 
         for (const nav of document.getElementsByTagName('nav')) {
             nav.style.borderLeft = '1px solid black'
@@ -25,6 +26,7 @@ iconId.addEventListener('click', () => {
         left_side_section.style.display = 'none'
         main_layout.classList.remove('main-section-new-margin')
         main_layout.classList.remove("scrol");
+        document.getElementById('small-screen-app-title').style.display = 'block'
         for (const nav of document.getElementsByTagName('nav')) {
             nav.style.borderLeft = 'none'
         }

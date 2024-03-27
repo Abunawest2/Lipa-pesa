@@ -266,8 +266,7 @@ section.side-menu .share{
         width: 70px;
     }
 
-    div.image-div h2{
-        margin-left: -10;
+    div.image-div h3{
         margin: auto;
         color: white;
     }
@@ -324,7 +323,7 @@ section.side-menu .share{
 
     section.main-section-new-margin{
         padding-bottom: 50px;
-        margin-left: 40%;
+        margin-left: 50%;
     }
 
     #small-screen-style{
@@ -347,7 +346,7 @@ section.side-menu .share{
         background-color: #006e00b9;
         position: fixed;
         top: 0;
-        width: 40%;
+        width: 50%;
         height: 100vh;
     }
 
@@ -363,7 +362,7 @@ section.side-menu .share{
         width: 70px;
     }
 
-    div.image-div h2{
+    div.image-div h3{
         color: white;
     }
 
