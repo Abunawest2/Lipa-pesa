@@ -135,10 +135,10 @@ main{
 
 
 /* New layout */
-#small-screen-style{
+/* #small-screen-style{
     display: none;
     grid-template-columns: auto 1fr;
-}
+} */
 
 i{
     color: white;
@@ -238,9 +238,9 @@ section.side-menu .share{
         margin-left: 40%;
     }
 
-    #small-screen-style{
+    /* #small-screen-style{
         display: grid;
-    }
+    } */
 
     .scrol:disabled {
         overflow: hidden;
