@@ -148,11 +148,12 @@ i{
 
 
 .left-side{
+    padding-bottom: 1000px;
     background-color: #006e00b9;
     position: fixed;
     top: 0;
     width: 40%;
-    height: 92vh;
+    height: 100vh;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -161,7 +162,7 @@ i{
 
 section.side-menu{
     flex: 1;
-    padding: 0 20px 10px 20px;
+    padding: 0 20px 50px 20px;
     position: sticky;
     display: flex;
     flex-direction: column;
