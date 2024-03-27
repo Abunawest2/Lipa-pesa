@@ -6,11 +6,14 @@ const iconId = document.getElementById("iconId");
 const menu_icon = document.getElementsByTagName("i");
 const banner = document.getElementById("header");
 const main_layout = document.getElementById("main-layout");
-const heading2 = document.getElementsByClassName('benefit-headings')
+const heading2 = document.querySelectorAll('.benefit-headings')
+const benefit = document.getElementsByClassName('.benefit');
 
-// menu_icon[0].style.display = "none"
+console.log(benefit);
 
-console.log(heading2)
+Array.from(heading2).forEach((heading) =>{
+    heading.style.fontSize = '24px'
+})
 
 iconId.addEventListener('click', () => {
     if (left_side_section.style.display === 'none') {
@@ -23,9 +26,9 @@ iconId.addEventListener('click', () => {
             nav.style.borderLeft = '1px solid black'
         }
         
-        for (let heading of heading2) {
-            heading.classList.toggle('font-size')
-        }
+        Array.from(heading2).forEach((heading) =>{
+            heading.style.fontSize = '18px'
+        })
 
     } else {
         left_side_section.style.display = 'none'
@@ -36,6 +39,9 @@ iconId.addEventListener('click', () => {
             nav.style.borderLeft = 'none'
         }
 
+        Array.from(heading2).forEach((heading) =>{
+            heading.style.fontSize = '24px'
+        })
     }
 })
 

@@ -63,7 +63,7 @@ ul li{
     color:#dfc1c1;
 }
 
-.font-size {
+.benefits-heading.font-size {
     font-size: px;
 }
 
@@ -169,7 +169,6 @@ section.side-menu{
 }
 h5{
     margin-left: 10px;
-
 }
 
 
@@ -363,12 +362,12 @@ section.side-menu .share{
 
     div.image-div img{
         padding: 6.5px 0 6.5px 6.5px;
-        width: 15vw;
+        width: 40px;
     }
 
     div.image-div h3{
         color: white;
-        font-size: 5vw;
+        font-size: 15px;
     }
 
     .share{
