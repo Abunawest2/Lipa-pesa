@@ -7,9 +7,9 @@ const menu_icon = document.getElementsByTagName("i");
 const banner = document.getElementById("header");
 const main_layout = document.getElementById("main-layout");
 const heading2 = document.querySelectorAll('.benefit-headings')
-const benefit = document.getElementsByClassName('.benefit');
+const benefit = document.querySelectorAll('.benefit');
 
-console.log(heading2);
+console.log(benefit);
 
 Array.from(heading2).forEach((heading) =>{
     heading.style.fontSize = '24px'
@@ -45,6 +45,10 @@ function showLeftSide() {
     Array.from(heading2).forEach((heading) =>{
         heading.style.fontSize = '15px'
     })
+
+    Array.from(benefit).forEach((benefitdiv) =>{
+        benefitdiv.style.width = '60%'
+    })
 }
 
 // Function to hide left_side_section
@@ -58,6 +62,10 @@ function hideLeftSide() {
     });
     Array.from(heading2).forEach((heading) =>{
         heading.style.fontSize = '24px'
+    })
+
+    Array.from(benefit).forEach((benefitdiv) =>{
+        benefitdiv.style.width = '75%'
     })
 }
 
