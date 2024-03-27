@@ -4,6 +4,7 @@
 }
 
 body {
+    padding-bottom: 50px;
     font-weight: 100;
     font-style: normal;
     text-align: center;
@@ -135,10 +136,9 @@ main{
 
 
 /* New layout */
-/* #small-screen-style{
+#small-screen-style{
     display: none;
-    grid-template-columns: auto 1fr;
-} */
+}
 
 i{
     color: white;
@@ -215,6 +215,10 @@ section.side-menu .share{
 @media screen and (max-width: 575px) {
     /* Styles for screens with a width between 541px and 720px */
 
+    body {
+        padding-bottom: 50px;
+    }
+
     nav{
         height: 50px;
     }
@@ -235,11 +239,12 @@ section.side-menu .share{
     section.main-section-new-margin{
         padding-bottom: 50px;
         margin-left: 40%;
+        
     }
 
-    /* #small-screen-style{
-        display: grid;
-    } */
+    #small-screen-style{
+        display: flow-root;
+    }
 
     .scrol:disabled {
         overflow: hidden;
