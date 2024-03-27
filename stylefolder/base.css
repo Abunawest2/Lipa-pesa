@@ -63,6 +63,9 @@ ul li{
     color:#dfc1c1;
 }
 
+.font-size {
+    font-size: px;
+}
 
 #menu-bar{
     display: none;
@@ -263,7 +266,7 @@ section.side-menu .share{
     }
 
     div.image-div img{
-        width: 70px;
+        width: 60px;
     }
 
     div.image-div h3{
@@ -301,7 +304,7 @@ section.side-menu .share{
   }
 
 @media screen and (max-width: 400px) {
-
+    
     .app-title{
         font-size: x-large;
     }
@@ -323,7 +326,7 @@ section.side-menu .share{
 
     section.main-section-new-margin{
         padding-bottom: 50px;
-        margin-left: 50%;
+        margin-left: 40%;
     }
 
     #small-screen-style{
@@ -346,11 +349,12 @@ section.side-menu .share{
         background-color: #006e00b9;
         position: fixed;
         top: 0;
-        width: 50%;
+        width: 40%;
         height: 100vh;
     }
 
     div.image-div{
+        height: 57px;
         background-color: #006e00;
         display: flex;
         justify-content: space-between;
@@ -359,11 +363,12 @@ section.side-menu .share{
 
     div.image-div img{
         padding: 6.5px 0 6.5px 6.5px;
-        width: 70px;
+        width: 15vw;
     }
 
     div.image-div h3{
         color: white;
+        font-size: 5vw;
     }
 
     .share{
@@ -389,8 +394,10 @@ section.side-menu .share{
         padding: 25px 0 10px 0;
         box-shadow: 2px 5px 20px rgba(180, 180, 180, 0.993);
     }
+
+
     div.benefit{
-        width: 80%;
+        width: 70%;
         border-radius: 10px;
         box-shadow: 2px 5px 20px rgba(180, 180, 180, 0.993);
         padding: 10px;

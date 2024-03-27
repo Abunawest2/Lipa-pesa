@@ -6,10 +6,11 @@ const iconId = document.getElementById("iconId");
 const menu_icon = document.getElementsByTagName("i");
 const banner = document.getElementById("header");
 const main_layout = document.getElementById("main-layout");
+const heading2 = document.getElementsByClassName('benefit-headings')
 
 // menu_icon[0].style.display = "none"
 
-console.log(document)
+console.log(heading2)
 
 iconId.addEventListener('click', () => {
     if (left_side_section.style.display === 'none') {
@@ -21,7 +22,11 @@ iconId.addEventListener('click', () => {
         for (const nav of document.getElementsByTagName('nav')) {
             nav.style.borderLeft = '1px solid black'
         }
-        document.getElementsByTagName('nav').style.b
+        
+        for (let heading of heading2) {
+            heading.classList.toggle('font-size')
+        }
+
     } else {
         left_side_section.style.display = 'none'
         main_layout.classList.remove('main-section-new-margin')
