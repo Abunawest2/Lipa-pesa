@@ -152,6 +152,8 @@ i{
     background-color: #006e00b9;
     position: fixed;
     top: 0;
+    left: 0;
+    bottom: 0;
     width: 40%;
     height: 100vh;
     display: none;
@@ -163,7 +165,6 @@ i{
 section.side-menu{
     flex: 1;
     padding: 0 20px 50px 20px;
-    position: sticky;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
