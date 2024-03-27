@@ -6,7 +6,6 @@
 body {
     font-weight: 100;
     font-style: normal;
-    margin-bottom: 100px;
     text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f2f2f2;
@@ -138,6 +137,7 @@ main{
 /* New layout */
 #small-screen-style{
     display: none;
+    grid-template-columns: auto 1fr;
 }
 
 i{
@@ -146,20 +146,28 @@ i{
     cursor: pointer;
 }
 
-/* section.left-side{
-    display: none;
-    background-color: #f2f2f2;
-    overflow-y: auto;
-} */
 
+.left-side{
+    background-color: #006e00b9;
+    position: fixed;
+    top: 0;
+    width: 40%;
+    height: 92vh;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+}
 
 section.side-menu{
+    flex: 1;
     padding: 0 20px 10px 20px;
     position: sticky;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 50px;
+    gap: 30px;
+    z-index: 1000;
 }
 
 .small-screens-list a, .share a{
@@ -223,10 +231,6 @@ section.side-menu .share{
         padding-bottom: 50px;
     }
 
-    section.main-section{
-        padding-bottom: 50px;
-    }
-
     section.main-section-new-margin{
         padding-bottom: 50px;
         margin-left: 40%;
@@ -234,53 +238,35 @@ section.side-menu .share{
 
     #small-screen-style{
         display: grid;
-        grid-template-columns: auto 1fr;
-        height: 50vh;
     }
 
     .scrol:disabled {
         overflow: hidden;
     }
 
-    .left-side{
-        display: none;
-        background-color: #f2f2f2;
-        overflow-y: auto;
-    }
-
-    .left-side{
-        background-color: #006e00b9;
-        position: fixed;
-        top: 0;
-        width: 40%;
-        height: 100vh;
-    }
 
     div.image-div{
         height: 57px;
         padding: 6.5px 5px 6.5px 0;
         background-color: #006e00;
         display: flex;
+        justify-content: space-around;
         box-shadow: 2px 2px 20px rgba(135, 230, 132, 0.8);
     }
 
     div.image-div img{
+        margin: auto;
         width: 60px;
     }
 
     div.image-div h3{
         margin: auto;
         color: white;
+        font-size: 4vw;
     }
 
     .share{
         border-top: 2px solid whitesmoke;
-    }
-
-    section.side-menu{
-        color: black;
-        position: sticky;
-        
     }
 
     section.features{
@@ -302,89 +288,14 @@ section.side-menu .share{
     }
   }
 
-@media screen and (max-width: 400px) {
-    
-    .app-title{
-        font-size: x-large;
-    }
+@media screen and (max-width: 390px) {
 
-    nav{
-        height: 50px;
-    }
-    .big-screen-style{
-        display: none;
-    }
-
-    section.main-section{
-        padding-bottom: 50px;
-    }
-
-    section.main-section{
-        padding-bottom: 50px;
-    }
 
     section.main-section-new-margin{
         padding-bottom: 50px;
         margin-left: 40%;
     }
 
-    #small-screen-style{
-        display: grid;
-        grid-template-columns: auto 1fr;
-        height: 50vh;
-    }
-
-    .scrol:disabled {
-        overflow: hidden;
-    }
-
-    .left-side{
-        display: none;
-        background-color: #f2f2f2;
-        overflow-y: auto;
-    }
-
-    .left-side{
-        background-color: #006e00b9;
-        position: fixed;
-        top: 0;
-        width: 40%;
-        height: 100vh;
-    }
-
-    div.image-div{
-        height: 57px;
-        background-color: #006e00;
-        display: flex;
-        justify-content: space-between;
-        box-shadow: 2px 2px 20px rgba(135, 230, 132, 0.8);
-    }
-
-    div.image-div img{
-        padding: 6.5px 0 6.5px 6.5px;
-        width: 40px;
-    }
-
-    div.image-div h3{
-        color: white;
-        font-size: 15px;
-    }
-
-    .share{
-        border-top: 2px solid whitesmoke;
-    }
-
-    section.side-menu{
-        color: black;
-        position: sticky;
-        
-    }
-
-    section.features{
-        border-radius: 10px;
-        padding: 25px;
-        box-shadow: 2px 5px 20px rgba(180, 180, 180, 0.993);
-    }
     section.benefits{
         flex-direction: column;
         justify-content: center;
@@ -394,14 +305,6 @@ section.side-menu .share{
         box-shadow: 2px 5px 20px rgba(180, 180, 180, 0.993);
     }
 
-
-    div.benefit{
-        width: 70%;
-        border-radius: 10px;
-        box-shadow: 2px 5px 20px rgba(180, 180, 180, 0.993);
-        padding: 10px;
-        margin-bottom: 20px;
-    }
 
 }
 
@@ -419,7 +322,7 @@ footer{
     right: 0;
     left: 0;
     min-height: 50px;
-    display: flex;
+    display: fl;
     justify-content: center;
     align-items: center;
 }

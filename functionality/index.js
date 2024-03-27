@@ -15,35 +15,56 @@ Array.from(heading2).forEach((heading) =>{
     heading.style.fontSize = '24px'
 })
 
+// Event listener to toggle left_side_section visibility
+// Event listener to toggle left_side_section visibility
 iconId.addEventListener('click', () => {
     if (left_side_section.style.display === 'none') {
-        left_side_section.style.display = 'flow-root'
-        main_layout.classList.toggle('main-section-new-margin')
-        main_layout.classList.add("scrol");
-        document.getElementById('small-screen-app-title').style.display = 'none'
-
-        for (const nav of document.getElementsByTagName('nav')) {
-            nav.style.borderLeft = '1px solid black'
-        }
-        
-        Array.from(heading2).forEach((heading) =>{
-            heading.style.fontSize = '18px'
-        })
-
+        showLeftSide();
     } else {
-        left_side_section.style.display = 'none'
-        main_layout.classList.remove('main-section-new-margin')
-        main_layout.classList.remove("scrol");
-        document.getElementById('small-screen-app-title').style.display = 'block'
-        for (const nav of document.getElementsByTagName('nav')) {
-            nav.style.borderLeft = 'none'
-        }
-
-        Array.from(heading2).forEach((heading) =>{
-            heading.style.fontSize = '24px'
-        })
+        hideLeftSide();
     }
-})
+});
+
+// Event listener to hide left_side_section when clicking outside of it
+document.addEventListener('click', (event) => {
+    const target = event.target;
+    if (!target.closest('#left_side_section') && !target.closest('a') && target !== iconId) {
+        hideLeftSide();
+    }
+});
+
+// Function to show left_side_section
+function showLeftSide() {
+    left_side_section.style.display = 'flex';
+    main_layout.classList.toggle('main-section-new-margin');
+    main_layout.classList.add('scrol');
+    document.getElementById('small-screen-app-title').style.display = 'none';
+    Array.from(document.getElementsByTagName('nav')).forEach(nav => {
+        nav.style.borderLeft = '1px solid black';
+    });
+    Array.from(document.getElementsByClassName('heading2')).forEach(heading => {
+        heading.style.fontSize = '18px';
+    });
+}
+
+// Function to hide left_side_section
+function hideLeftSide() {
+    left_side_section.style.display = 'none';
+    main_layout.classList.remove('main-section-new-margin');
+    main_layout.classList.remove('scrol');
+    document.getElementById('small-screen-app-title').style.display = 'block';
+    Array.from(document.getElementsByTagName('nav')).forEach(nav => {
+        nav.style.borderLeft = 'none';
+    });
+    Array.from(document.getElementsByClassName('heading2')).forEach(heading => {
+        heading.style.fontSize = '24px';
+    });
+}
+
+Array.from(document.getElementsByTagName('a')).forEach((links) => {
+    links.addEventListener('click', hideLeftSide)
+});
+
 
 // left_side_section.addEventListener('click', (event) => {
 //     if (event.target.tagName === 'a') {
