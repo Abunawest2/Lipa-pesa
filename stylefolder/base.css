@@ -301,11 +301,11 @@ section.side-menu .share{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-radius: 10px;
-        padding: 25px 0 10px 0;
-        box-shadow: 2px 5px 20px rgba(180, 180, 180, 0.993);
     }
 
+    div.benefit{
+        width: 70%;
+    }
 
 }
 

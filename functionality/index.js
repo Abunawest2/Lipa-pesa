@@ -9,7 +9,7 @@ const main_layout = document.getElementById("main-layout");
 const heading2 = document.querySelectorAll('.benefit-headings')
 const benefit = document.getElementsByClassName('.benefit');
 
-console.log(benefit);
+console.log(heading2);
 
 Array.from(heading2).forEach((heading) =>{
     heading.style.fontSize = '24px'
@@ -42,9 +42,9 @@ function showLeftSide() {
     Array.from(document.getElementsByTagName('nav')).forEach(nav => {
         nav.style.borderLeft = '1px solid black';
     });
-    Array.from(document.getElementsByClassName('heading2')).forEach(heading => {
-        heading.style.fontSize = '18px';
-    });
+    Array.from(heading2).forEach((heading) =>{
+        heading.style.fontSize = '15px'
+    })
 }
 
 // Function to hide left_side_section
@@ -56,9 +56,9 @@ function hideLeftSide() {
     Array.from(document.getElementsByTagName('nav')).forEach(nav => {
         nav.style.borderLeft = 'none';
     });
-    Array.from(document.getElementsByClassName('heading2')).forEach(heading => {
-        heading.style.fontSize = '24px';
-    });
+    Array.from(heading2).forEach((heading) =>{
+        heading.style.fontSize = '24px'
+    })
 }
 
 Array.from(document.getElementsByTagName('a')).forEach((links) => {
