@@ -212,7 +212,7 @@ section.side-menu .share{
 
 /* Medium and small screen */
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 630px) {
     /* Styles for screens with a width between 541px and 720px */
 
     body {
