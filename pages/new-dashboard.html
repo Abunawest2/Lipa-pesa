@@ -3,171 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../stylefolder/base.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Dashboard - LipaPesa</title>
+    <link rel="stylesheet" href="./Styles/Style.css">
 </head>
 <body>
-    <section class="big-screen-style">
-        <sections id="header" class="header">
-            <header>
-            </header>
-        </sections>
-        <nav class="big-screens">
-            <h1 class="app-title">LIPAPESA</h1>
-            <!-- <a href="index.html"><img class="image-logo" src="../images/logoLP.png" alt="LipaPesa"></a> -->
-            <ul class="big-screen">
-                <li class="links">
-                    <a href="#features">Home</a>
-                </li>
-                <li class="links">
-                    <a href="#features">Features</a>
-                </li>
-                <li class="links">
-                    <a href="#benefits">Benefits</a>
-                </li>
-                <li class="links">
-                    <a href="#footer">Contact</a>
+    <header class="banner">
+        <a href="./index.html"><img src="/logoLP.png" alt="LOGO"></a>
+    </header>
+    <header class="big-screen">
+        <div class="logo">
+            <img src="/logoLP.png" alt="LipaPesa">
+        </div>
+        <nav class="menu-links menu">
+            <ul>
+                <li><a href="notification.html">Notification</a></li>
+                <li><a href="setting.html">Settings</li>
+                <li>
+                    <a href="#drop" onclick="dropDownDisplay">Account</a>
+                    <div class="dropdown-content" id="drop">
+                        <a href="logout.html">Logout</a>
+                        <a href="update-profile.html">Update Profile</a>
+                    </div>
                 </li>
             </ul>
-            <a class="login-title" href="../pages/logIn.html">
-                <h1>Login</h1>
-            </a>
         </nav>
-
-        <!-- Big-screen main section starts -->
-
-        <main>
-            <section class="login-form">
-                <h1>Sign In</h1>
-                <form>
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required>
-    
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-    
-                    <a href="./dashboard.html"><button type="submit">Login</button></a>
-                </form>
-                <p>Don't have an account? <a href="register.html">Sign Up</a></p>
-            </section>
-        </main>
-
-        <!-- Big-screen main section ends -->
-    
-        <footer id="footer">
-            <p>&copy; 2024 LipaPesa App. All rights reserved.</p>
-        </footer>
-
-    </section>
-
-    <!-- Dividing Big Screen on Top and small screen Below -->
-    
-    <section id="small-screen-style" class="small-screen-style">
-        <section id="left-side" class="left-side">
-            <div class="image-div">
-                <img src="../images/logoLP.png" alt="" width="50px"> <h3>LipaPesa</h3>
+        <nav class="menu-links menu-links-small">
+            <i class="fa-solid fa-bars"></i>
+            <ul >
+                <li><a href="notification.html">Notification</a></li>
+                <li><a href="setting.html">Settings</li>
+                <li>
+                    <a href="#drop" onclick="dropDownDisplay">Account</a>
+                    <div class="dropdown-content" id="drop">
+                        <a href="logout.html">Logout</a>
+                        <a href="update-profile.html">Update Profile</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <header class="small-screen">
+        <div class="logo">
+            <img src="/logoLP.png" alt="LipaPesa">
+        </div>
+        <nav class="menu-links menu">
+            <ul>
+                <li><a href="notification.html"><img class="image-logo" src="/notification.png" alt="Notification"></a></li>
+                <li><a href="setting.html"><img class="image-logo" src="../settings.png" alt="settings"></a></li>
+                <li>
+                    <a href="#drop" onclick="dropDownDisplay"><img class="image-logo" src="/User.png" alt="Profile"></a>
+                    <div class="dropdown-content" id="drop">
+                        <a href="logout.html">Logout</a>
+                        <a href="update-profile.html">Update Profile</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header> -->
+    <main id="main-dashboard">
+        <section class="dashboard">
+            <h1>Welcome to Your Dashboard</h1>
+            <div class="account-info">
+                <h2>Account Balance</h2>
+                <p>$1,000.00</p>
             </div>
-            <section class="side-menu">
-                <div class="links-div">
-                    <ul class="big-screen">
-                        <li class="small-screens-list">
-                            <a class="small-screens-links" href="../pages/index.html">
-                                <span class="material-symbols-outlined">
-                                    home
-                                </span>
-                                <h5>Home</h5>
-                            </a>
-                        </li>
-                        <li class="small-screens-list">
-                            <a class="small-screens-links" href="#features">
-                                <span class="material-symbols-outlined">
-                                    linked_services
-                                </span>
-                                <h5>Features</h5>
-                            </a>
-                        </li>
-                        <li class="small-screens-list">
-                            <a class="small-screens-links" href="#benefits">
-                                <span class="material-symbols-outlined">
-                                    loyalty
-                                </span>
-                                <h5>Benefits</h5>
-                            </a>
-                        </li>
-                        <li class="small-screens-list">
-                            <a class="small-screens-links" href="#footer">
-                                <span class="material-symbols-outlined">
-                                    contact_page
-                                </span>
-                                <h5>Contact</h5>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="share">
-                    <a class="small-screens-links" href="#footer">
-                        <span class="material-symbols-outlined">
-                            contact_page
-                        </span>
-                        <h5>Contact</h5>
-                    </a>
-
-                    <a class="small-screens-links" href="#footer">
-                        <span class="material-symbols-outlined">
-                            contact_page
-                        </span>
-                        <h5>Contact</h5>
-                    </a>
-                </div>
-            </section>
+            <div class="actions">
+                <button>Send Money</button>
+                <button>Request Money</button>
+                <button>View Transactions</button>
+            </div>
         </section>
-        <section id="main-layout" class="main-section">
-            <nav class="small-screens">
-                <i id="iconId" class="fa-solid fa-bars"></i>
-        
-                <h1 id="small-screen-app-title" class="app-title">LIPAPESA</h1>
-        
-                <a class="login-title" href="login.html">
-                    <span class="material-symbols-outlined">
-                        login
-                    </span>
-                </a>
-                
-            </nav>
-            
-            <!-- small-screen main section starts -->
+    </main>
+    
+    <footer id="footer">
+        <p>&copy; 2024 LipaPesa App. All rights reserved.</p>
+    </footer>
 
-            <main>
-                <section class="login-form">
-                    <h1>Sign In</h1>
-                    <form>
-                        <label for="email">Email Address:</label>
-                        <input type="email" id="email" name="email" required>
-        
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" required>
-        
-                        <a href="./dashboard.html"><button type="submit">Login</button></a>
-                    </form>
-                    <p>Don't have an account? <a href="register.html">Sign Up</a></p>
-                </section>
-            </main>
-
-            <!-- small-screen main section ends -->
-        
-            <footer id="footer">
-                <p>&copy; 2024 LipaPesa App. All rights reserved.</p>
-            </footer>
-
-        </section>
-    </section>
-
-    <script src="../functionality/index.js"></script>
+    <script>
+        // Highlight active menu link
+        document.addEventListener('DOMContentLoaded', function() {
+            const dashboardLink = document.getElementById('dashboard-link');
+            const currentLocation = window.location.pathname;
+            if (currentLocation.includes('dashboard')) {
+                dashboardLink.classList.add('active');
+            }
+        });
+    </script>
 </body>
 </html>

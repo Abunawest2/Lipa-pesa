@@ -3,91 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - LipaPesa</title>
-    <link rel="stylesheet" href="./Styles/Style.css">
+    <link rel="stylesheet" href="../stylefolder/base.css">
+    <link rel="stylesheet" href="../stylefolder/dashboardStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
-    <header class="banner">
-        <a href="./index.html"><img src="/logoLP.png" alt="LOGO"></a>
-    </header>
-    <header class="big-screen">
-        <div class="logo">
-            <img src="/logoLP.png" alt="LipaPesa">
-        </div>
-        <nav class="menu-links menu">
-            <ul>
-                <li><a href="notification.html">Notification</a></li>
-                <li><a href="setting.html">Settings</li>
-                <li>
-                    <a href="#drop" onclick="dropDownDisplay">Account</a>
-                    <div class="dropdown-content" id="drop">
-                        <a href="logout.html">Logout</a>
-                        <a href="update-profile.html">Update Profile</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-        <nav class="menu-links menu-links-small">
-            <i class="fa-solid fa-bars"></i>
-            <ul >
-                <li><a href="notification.html">Notification</a></li>
-                <li><a href="setting.html">Settings</li>
-                <li>
-                    <a href="#drop" onclick="dropDownDisplay">Account</a>
-                    <div class="dropdown-content" id="drop">
-                        <a href="logout.html">Logout</a>
-                        <a href="update-profile.html">Update Profile</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-- <header class="small-screen">
-        <div class="logo">
-            <img src="/logoLP.png" alt="LipaPesa">
-        </div>
-        <nav class="menu-links menu">
-            <ul>
-                <li><a href="notification.html"><img class="image-logo" src="/notification.png" alt="Notification"></a></li>
-                <li><a href="setting.html"><img class="image-logo" src="../settings.png" alt="settings"></a></li>
-                <li>
-                    <a href="#drop" onclick="dropDownDisplay"><img class="image-logo" src="/User.png" alt="Profile"></a>
-                    <div class="dropdown-content" id="drop">
-                        <a href="logout.html">Logout</a>
-                        <a href="update-profile.html">Update Profile</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </header> -->
-    <main id="main-dashboard">
-        <section class="dashboard">
-            <h1>Welcome to Your Dashboard</h1>
-            <div class="account-info">
-                <h2>Account Balance</h2>
-                <p>$1,000.00</p>
-            </div>
-            <div class="actions">
-                <button>Send Money</button>
-                <button>Request Money</button>
-                <button>View Transactions</button>
-            </div>
-        </section>
-    </main>
+    <!-- Dividing Big Screen on Top and small screen Below -->
     
-    <footer id="footer">
-        <p>&copy; 2024 LipaPesa App. All rights reserved.</p>
-    </footer>
+    <section id="dashboard" class="dashboard-section1">
+        <section id="left-side" class="left-side dashboard-side-panel">
+            <div class="image-div d-image-div">
+                <img src="../images/logoLP.png" alt="" width="50px"> <span>LIPAPESA</span>
+            </div>
+            <section class="side-menu">
+                <div class="links-div">
+                    <ul class="big-screen">
+                        <li class="small-screens-list">
+                            <a class="small-screens-links" href="../pages/index.html">
+                                <span class="material-symbols-outlined">
+                                    home
+                                </span>
+                                <h5 class="icon-labels">Home</h5>
+                            </a>
+                        </li>
+                        <li class="small-screens-list">
+                            <a class="small-screens-links" href="#features">
+                                <span class="material-symbols-outlined">
+                                    linked_services
+                                </span>
+                                <h class="icon-labels">Features</h5>
+                            </a>
+                        </li>
+                        <li class="small-screens-list">
+                            <a class="small-screens-links" href="#benefits">
+                                <span class="material-symbols-outlined">
+                                    loyalty
+                                </span>
+                                <h5 class="icon-labels">Benefits</h5>
+                            </a>
+                        </li>
+                        <li class="small-screens-list">
+                            <a class="small-screens-links" href="#footer">
+                                <span class="material-symbols-outlined">
+                                    contact_page
+                                </span>
+                                <h5 class="icon-labels">Contact</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-    <script>
-        // Highlight active menu link
-        document.addEventListener('DOMContentLoaded', function() {
-            const dashboardLink = document.getElementById('dashboard-link');
-            const currentLocation = window.location.pathname;
-            if (currentLocation.includes('dashboard')) {
-                dashboardLink.classList.add('active');
-            }
-        });
-    </script>
+                <div class="share">
+                    <a class="small-screens-links" href="../pages/dashboard.html">
+                        <span class="material-symbols-outlined">
+                            login
+                        </span>
+                        <h5 class="icon-labels">Login</h5>
+                    </a>
+
+                    <a class="small-screens-links" href="#footer">
+                        <span class="material-symbols-outlined">
+                            contact_page
+                        </span>
+                        <h5 class="icon-labels">Contact</h5>
+                    </a>
+                </div>
+            </section>
+        </section>
+        <section id="main-layout" class="main-section d-main-section">
+            <nav class="small-screens">
+                <i id="iconId" class="fa-solid fa-bars"></i>
+        
+                <a href=""><h1 id="small-screen-app-title" class="app-title">LIPAPESA</h1></a>
+        
+                <a class="login-title" href="../pages/logIn.html">
+                    <span class="material-symbols-outlined">
+                        login
+                    </span>
+                </a>
+                
+            </nav>
+
+            <main id="main-dashboard">
+                <section class="dashboard">
+                    <h1>Welcome to Your Dashboard</h1>
+                    <div class="account-info">
+                        <h2>Account Balance</h2>
+                        <p>$1,000.00</p>
+                    </div>
+                    <div class="actions">
+                        <button>Send Money</button>
+                        <button>Request Money</button>
+                        <button>View Transactions</button>
+                    </div>
+                </section>
+            </main>
+        
+            <footer id="footer">
+                <p>&copy; 2024 LipaPesa App. All rights reserved.</p>
+            </footer>
+
+        </section>
+    </section>
+
+    <script src="../functionality/index.js"></script>
 </body>
 </html>

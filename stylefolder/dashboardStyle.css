@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.dashboard {
+    max-width: 75%;
+    margin: auto;
+    background-color: #f3d677; /* Light yellow background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+.dashboard h1 {
+    color: #333; /* Dark text color */
+}
+
+.account-info {
+    background-color: #e9be5bd0; /* Light yellow background color for account info */
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.actions button {
+    background-color: #ffc107; /* Yellow background color for buttons */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.actions button:hover {
+    background-color: #ffca28; /* Darker yellow on hover */
+}
+
+
+@media screen and (max-width: 630px) {
+
+    
+
+    .dashboard{
+        height: fit-content;
+    }
+
+    .actions {
+        font-weight: bolder;
+        flex-direction: column;
+        width: 75%;
+        margin: auto;
+    }
+
+    .dashboard-side-panel > section.side-menu{
+        font-size: 1.5rem;
+    }
+
+    .dashboard-side-panel > section.side-menu{
+        /* font-size: 3rem; */
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .dashboard{
+        height: fit-content;
+    }
+
+    .actions {
+
+        font-weight: bolder;
+        flex-direction: column;
+        width: 75%;
+        margin: auto;
+    }
+}
+
+/* DASHBOARD SIDE BAR */
+
+.dashboard-side-panel{
+    height: auto;
+    width: 250px;
+    padding: 0 0;
+    border-right: 1px solid black;
+    /* display: none; */
+}
+
+section.d-main-section{
+    padding-bottom: 50px;
+    margin-left: 90px;
+     /* I will it  remove later */
+}
+
+section.d-main-section-new-margin{
+    padding-bottom: 50px;
+    margin-left: 250px;
+}
+
+section.side-menu .links-div ul{
+    padding: 10px 30px 10px 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.dashboard-side-panel{
+    width: 90px;
+}
+
+.icon-labels {
+    opacity: 0;
+}
+
+
+
+.dashboard-side-panel > section.side-menu{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    gap: 5px;
+}
+
+.dashboard-side-panel section.side-menu span{
+    font-size: 30px;
+}
+
+span h5{
+    font-size: 30px;
+}
+
+section.side-menu > .links-div{
+    flex: 1;
+
+}
+
+.share {
+    background-color: #ffca28;
+    padding-bottom: 500px;
+}
+
+.dashboard-side-panel .image-div{
+    height: 50px;
+    background-color: #089608;
+    padding: 7px 30px 7px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 2px 2px 20px rgba(135, 230, 132, 0.8);
+    gap: 10px;
+}
+
+.d-image-div img{
+    margin-right: auto;
+    width: 50px;
+}
+
+.d-image-div span{
+    font-size: 1.5rem;
+    padding: 0 10px;
+    font-weight: 900;
+    flex: 1;
+    margin-left: auto;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer{
+    /* display: none; */
+}
+
+div.big-screen{
+    list-style: none;
+    display: flex;
+}

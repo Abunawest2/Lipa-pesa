@@ -26,10 +26,11 @@ header{
 }
 
 nav{
-    padding: 10px 20px;
+    
+    padding: 7px 30px 7px 20px;
     position: sticky;
     top: 0;
-    height: 33px;
+    height: 50px;
     background-color: #006e00; /* Green */
     display: flex;
     justify-content: space-between;
@@ -75,9 +76,22 @@ ul li{
 
 /* Main Section for Index.html page */
 
+section.main-section{
+    padding-bottom: 50px;
+    margin-left: 40%;
+    /* width: 100%; */
+     /* I will remove later */
+}
+
+section.main-section-new-margin{
+    padding-bottom: 50px;
+    margin-left: 40%;
+}
+
 main{
     margin-top: 20px;
     padding: 0 10px;
+    max-height: 100%;
 }
 
 .features h1 {
@@ -136,7 +150,8 @@ main{
 
 
 /* New layout */
-#small-screen-style{
+
+.small-screen-style{
     display: none;
 }
 
@@ -155,7 +170,7 @@ i{
     bottom: 0;
     width: 40%;
     height: 100vh;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow-y: auto;
@@ -166,9 +181,10 @@ section.side-menu{
     padding: 0 20px 60px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 30px;
-    z-index: 1000;
+}
+
+section.side-menu .share{
+    margin-top: auto;
 }
 
 .small-screens-list a, .share a{
@@ -188,22 +204,21 @@ h5{
 
 
 section.side-menu .links-div ul{
+    padding: 10px 30px 10px 20px;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    gap: 25px;
 }
 
-section.side-menu .links-div ul li{
-    padding: 20px 0;
-}
+
 
 section.side-menu .share{
+    border-top: 2px solid whitesmoke;
+    padding: 10px 20px 60px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-.share a{
-    padding: 20px 0;
+    gap: 25px;
 }
 
 
@@ -232,16 +247,6 @@ section.side-menu .share{
         display: none;
     }
 
-    section.main-section{
-        padding-bottom: 50px;
-    }
-
-    section.main-section-new-margin{
-        padding-bottom: 50px;
-        margin-left: 40%;
-        
-    }
-
     #small-screen-style{
         display: flow-root;
     }
@@ -252,8 +257,8 @@ section.side-menu .share{
 
 
     div.image-div{
-        height: 57px;
-        padding: 6.5px 5px 6.5px 0;
+        height: 50px;
+        padding: 7px 30px 7px 20px;
         background-color: #006e00;
         display: flex;
         justify-content: space-around;
@@ -297,10 +302,10 @@ section.side-menu .share{
 @media screen and (max-width: 390px) {
 
 
-    section.main-section-new-margin{
+    /* section.main-section-new-margin{
         padding-bottom: 50px;
         margin-left: 40%;
-    }
+    } */
 
     section.benefits{
         flex-direction: column;

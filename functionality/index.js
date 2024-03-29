@@ -52,61 +52,23 @@ function showLeftSide() {
 }
 
 // Function to hide left_side_section
-function hideLeftSide() {
-    left_side_section.style.display = 'none';
-    main_layout.classList.remove('main-section-new-margin');
-    main_layout.classList.remove('scrol');
-    document.getElementById('small-screen-app-title').style.display = 'block';
-    Array.from(document.getElementsByTagName('nav')).forEach(nav => {
-        nav.style.borderLeft = 'none';
-    });
-    Array.from(heading2).forEach((heading) =>{
-        heading.style.fontSize = '24px'
-    })
+// function hideLeftSide() {
+//     left_side_section.style.display = 'none';
+//     main_layout.classList.remove('main-section-new-margin');
+//     main_layout.classList.remove('scrol');
+//     document.getElementById('small-screen-app-title').style.display = 'block';
+//     Array.from(document.getElementsByTagName('nav')).forEach(nav => {
+//         nav.style.borderLeft = 'none';
+//     });
+//     Array.from(heading2).forEach((heading) =>{
+//         heading.style.fontSize = '24px'
+//     })
 
-    Array.from(benefit).forEach((benefitdiv) =>{
-        benefitdiv.style.width = '75%'
-    })
-}
+//     Array.from(benefit).forEach((benefitdiv) =>{
+//         benefitdiv.style.width = '75%'
+//     })
+// }
 
 Array.from(document.getElementsByTagName('a')).forEach((links) => {
     links.addEventListener('click', hideLeftSide)
 });
-
-
-// left_side_section.addEventListener('click', (event) => {
-//     if (event.target.tagName === 'a') {
-//         event.stopPropagation(); // Prevent the body click event from triggering
-//     } else{
-//         left_side_section.style.display = 'flow-root'
-//     }
-// });
-
-
-
-
-
-
-
-
-// console.log(menu)
-
-const display = () => {
-    if (smallmenu.style.display === "none") {
-        smallmenu.style.display = "flex"
-        banner[0].style.display = "none"
-    } else{
-        smallmenu.style.display = "none"
-    }
-}
-
-// document.addEventListener('click', function(event) {
-//     const targetElement = event.target; // clicked element
-
-//     if (!targetElement.closest('#small-menu') && !targetElement.closest('#menu')) {
-//         // Close the menu if the click is outside of hidden-screen and menu-icon
-//         smallmenu.style.display = 'none';
-//     }
-// });
-
-// menu.addEventListener('click', display)
