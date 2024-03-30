@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Dashboard</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
     <section id="dashboard" class="dashboard-section1">
         <section id="left-side-dashboard" class="left-side dashboard-side-panel">
             <div class="image-div d-image-div">
-                <img src="../images/logoLP.png" alt="" width="50px"> <span id="title-logo">LIPAPESA</span>
+                <img src="../images/logoLP.png" alt="" width="50px"><span id="title-logo"><h3>LipaPesa</h3></span>
             </div>
             <section class="side-menu">
                 <div class="links-div">
@@ -42,35 +43,45 @@
                         <li class="small-screens-list">
                             <a class="small-screens-links" href="#benefits">
                                 <span class="material-symbols-outlined">
-                                    loyalty
+                                    payments
                                 </span>
-                                <h5 class="icon-labels">Benefits</h5>
+                                <h5 class="icon-labels">Payment</h5>
                             </a>
                         </li>
                         <li class="small-screens-list">
                             <a class="small-screens-links" href="#footer">
                                 <span class="material-symbols-outlined">
-                                    contact_page
+                                    currency_exchange
                                 </span>
-                                <h5 class="icon-labels">Contact</h5>
+                                <h5 class="icon-labels">Forex</h5>
+                            </a>
+                        </li>
+
+                        <li class="small-screens-list">
+                            <a class="small-screens-links" href="#footer">
+                                <i class="fa-solid fa-building-columns"></i>
+                                <h5 class="icon-labels">Visit Bank</h5>
                             </a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="share">
-                    <a class="small-screens-links" href="../pages/dashboard.html">
+                    <a class="small-screens-links" href="../pages/setting.html">
                         <span class="material-symbols-outlined">
-                            login
+                            account_circle
                         </span>
-                        <h5 class="icon-labels">Login</h5>
+                        <h5 class="icon-labels">Log Out</h5>
                     </a>
 
                     <a class="small-screens-links" href="#footer">
-                        <span class="material-symbols-outlined">
-                            contact_page
-                        </span>
-                        <h5 class="icon-labels">Contact</h5>
+                        <i class='bx bx-share bx-flip-horizontal' ></i>
+                        <h5 class="icon-labels">Share App</h5>
+                    </a>
+
+                    <a class="small-screens-links" href="../pages/dashboard.html">
+                        <i class='bx bx-log-out'></i>
+                        <h5 class="icon-labels">Log Out</h5>
                     </a>
                 </div>
             </section>
@@ -78,15 +89,10 @@
         <section id="main-layout" class="main-section d-main-section">
             <nav class="small-screens">
                 <i id="iconId" class="fa-solid fa-bars"></i>
-        
                 <a href=""><h1 id="small-screen-app-title" class="app-title">LIPAPESA</h1></a>
-        
                 <a class="login-title" href="../pages/logIn.html">
-                    <span class="material-symbols-outlined">
-                        login
-                    </span>
+                    <i class='bx bx-bell' ></i>
                 </a>
-                
             </nav>
 
             <main id="main-dashboard">

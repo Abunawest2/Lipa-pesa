@@ -64,7 +64,7 @@
 
 @media screen and (max-width: 400px) {
 
-    span h5{
+    i h5{
         font-size: 10px;
     }
 
@@ -85,20 +85,21 @@
 
 .dashboard-side-panel{
     height: auto;
-    width: 90px;
+    width: 70px;
     padding: 0 0;
     border-right: 1px solid black;
     display: flex;
+    overflow-y: auto;
 }
 
 section.d-main-section{
     padding-bottom: 50px;
-    margin-left: 90px;
+    margin-left: 70px;
      /* I will it  remove later */
 }
 
 section.d-main-section-new-margin{
-    margin-left: 250px;
+    margin-left: 170px;
 }
 
 section.side-menu .links-div ul{
@@ -106,7 +107,11 @@ section.side-menu .links-div ul{
     height: 100%;
     /* display: flex; */
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
+}
+
+section.side-menu .share{
+    gap: 10px;
 }
 
 
@@ -120,13 +125,9 @@ section.side-menu .links-div ul{
     margin: 0;
     padding: 0;
     width: 100%;
-    gap: 5px;
+    /* gap: 5px; */
 }
 
-
-span h5{
-    /* font-size: 30px; */
-}
 
 .d-image-div img{
     margin-right: auto;
@@ -134,11 +135,10 @@ span h5{
 }
 
 .d-image-div span{
-    font-size: 1.5rem;
     padding: 0 10px;
     font-weight: 900;
     flex: 1;
-    margin-left: auto;
+    margin-right: auto;
     height: 100%;
     display: none;
     justify-content: flex-start;

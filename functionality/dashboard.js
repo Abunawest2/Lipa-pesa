@@ -7,8 +7,8 @@ console.log(mainLayout);
 menuIcon.addEventListener('click', expandSidePanel)
 
 function expandSidePanel(){
-    if (dashboardSidePanel.style.width === '90px' ) {
-        dashboardSidePanel.style.width = '250px'
+    if (dashboardSidePanel.style.width === '70px' ) {
+        dashboardSidePanel.style.width = '170px'
         mainLayout.classList.toggle("d-main-section-new-margin")
         document.getElementById('title-logo').style.display = 'flex'
         Array.from(document.querySelectorAll('.icon-labels')).forEach(
@@ -18,9 +18,9 @@ function expandSidePanel(){
             }
         )
     } else{
-        dashboardSidePanel.style.width = '90px'
+        dashboardSidePanel.style.width = '70px'
         mainLayout.classList.remove("d-main-section-new-margin")
-        document.getElementById('title-logo').style.display = 'flex'
+        document.getElementById('title-logo').style.display = 'none'
         Array.from(document.querySelectorAll('.icon-labels')).forEach(
             (labels) => {
                 labels.style.opacity = '0'
