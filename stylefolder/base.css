@@ -78,7 +78,6 @@ ul li{
 
 section.main-section{
     padding-bottom: 50px;
-    margin-left: 40%;
     /* width: 100%; */
      /* I will remove later */
 }
@@ -170,7 +169,7 @@ i{
     bottom: 0;
     width: 40%;
     height: 100vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     overflow-y: auto;
@@ -178,28 +177,31 @@ i{
 
 section.side-menu{
     flex: 1;
-    padding: 0 20px 60px 20px;
+    /* padding: 0 20px 60px 20px; */
     display: flex;
     flex-direction: column;
 }
 
 section.side-menu .share{
+    background-color: #ffca28;
     margin-top: auto;
 }
 
-.small-screens-list a, .share a{
-    display: flex;
-    align-items: center;
-
-}
 h5{
     margin-left: 10px;
 }
 
-
+.small-screens-links{
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
 .small-screens-list:hover, .share a:hover{
     border-bottom: 2px solid #006e00;
+    
+    
 }
 
 
@@ -208,7 +210,7 @@ section.side-menu .links-div ul{
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 40px;
 }
 
 
@@ -221,7 +223,15 @@ section.side-menu .share{
     gap: 25px;
 }
 
-
+div.image-div{
+    height: 50px;
+    padding: 7px 30px 7px 20px;
+    background-color: #006e00;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    box-shadow: 2px 2px 20px rgba(135, 230, 132, 0.8);
+}
 
 
 
@@ -255,15 +265,6 @@ section.side-menu .share{
         overflow: hidden;
     }
 
-
-    div.image-div{
-        height: 50px;
-        padding: 7px 30px 7px 20px;
-        background-color: #006e00;
-        display: flex;
-        justify-content: space-around;
-        box-shadow: 2px 2px 20px rgba(135, 230, 132, 0.8);
-    }
 
     div.image-div img{
         margin: auto;
@@ -300,12 +301,6 @@ section.side-menu .share{
   }
 
 @media screen and (max-width: 390px) {
-
-
-    /* section.main-section-new-margin{
-        padding-bottom: 50px;
-        margin-left: 40%;
-    } */
 
     section.benefits{
         flex-direction: column;

@@ -52,22 +52,22 @@ function showLeftSide() {
 }
 
 // Function to hide left_side_section
-// function hideLeftSide() {
-//     left_side_section.style.display = 'none';
-//     main_layout.classList.remove('main-section-new-margin');
-//     main_layout.classList.remove('scrol');
-//     document.getElementById('small-screen-app-title').style.display = 'block';
-//     Array.from(document.getElementsByTagName('nav')).forEach(nav => {
-//         nav.style.borderLeft = 'none';
-//     });
-//     Array.from(heading2).forEach((heading) =>{
-//         heading.style.fontSize = '24px'
-//     })
+function hideLeftSide() {
+    left_side_section.style.display = 'none';
+    main_layout.classList.remove('main-section-new-margin');
+    main_layout.classList.remove('scrol');
+    document.getElementById('small-screen-app-title').style.display = 'block';
+    Array.from(document.getElementsByTagName('nav')).forEach(nav => {
+        nav.style.borderLeft = 'none';
+    });
+    Array.from(heading2).forEach((heading) =>{
+        heading.style.fontSize = '24px'
+    })
 
-//     Array.from(benefit).forEach((benefitdiv) =>{
-//         benefitdiv.style.width = '75%'
-//     })
-// }
+    Array.from(benefit).forEach((benefitdiv) =>{
+        benefitdiv.style.width = '75%'
+    })
+}
 
 Array.from(document.getElementsByTagName('a')).forEach((links) => {
     links.addEventListener('click', hideLeftSide)
