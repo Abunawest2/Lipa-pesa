@@ -31,6 +31,7 @@ function expandSidePanel(){
         dashboardSidePanel.style.width = '170px'
         mainLayout.classList.toggle("d-main-section-new-margin")
         document.getElementById('title-logo').style.display = 'flex'
+        document.getElementById('small-screen-app-title').style.display = 'none';
         Array.from(document.querySelectorAll('.icon-labels')).forEach(
             (labels) => {
                 labels.style.opacity = '100%'
@@ -43,6 +44,7 @@ function expandSidePanel(){
         dashboardSidePanel.style.width = '70px'
         mainLayout.classList.remove("d-main-section-new-margin")
         document.getElementById('title-logo').style.display = 'none'
+        document.getElementById('small-screen-app-title').style.display = 'block';
         Array.from(document.querySelectorAll('.icon-labels')).forEach(
             (labels) => {
                 labels.style.opacity = '0'

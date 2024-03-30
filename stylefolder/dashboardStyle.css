@@ -105,7 +105,7 @@ section.d-main-section-new-margin{
 section.side-menu .links-div ul{
     padding: 10px 30px 10px 20px;
     height: 100%;
-    gap: 10px;
+    gap: 20px;
 }
 
 section.side-menu .share{
@@ -156,8 +156,7 @@ section.side-menu .share{
 #Profile-icon{
     color: white;
 }
-
-div.big-screen{
-    list-style: none;
-    display: flex;
+nav span.material-symbols-outlined, nav a i{
+    font-size: 35px;
 }
+
