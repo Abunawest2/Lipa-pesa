@@ -78,12 +78,9 @@ ul li{
 
 section.main-section{
     padding-bottom: 50px;
-    /* width: 100%; */
-     /* I will remove later */
 }
 
 section.main-section-new-margin{
-    padding-bottom: 50px;
     margin-left: 40%;
 }
 
@@ -177,25 +174,26 @@ i{
 
 section.side-menu{
     flex: 1;
-    /* padding: 0 20px 60px 20px; */
     display: flex;
     flex-direction: column;
 }
 
 section.side-menu .share{
-    background-color: #ffca28;
-    margin-top: auto;
+    
 }
 
-h5{
-    margin-left: 10px;
-}
+
 
 .small-screens-links{
     padding-bottom: 10px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    width: 100%;
+    gap: 5px;
+}
+
+h5{
+    padding-left: 8px;
 }
 
 .small-screens-list:hover, .share a:hover{
@@ -206,21 +204,23 @@ h5{
 
 
 section.side-menu .links-div ul{
-    padding: 10px 30px 10px 20px;
+    padding: 10px 10px 0 20px;
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
 }
 
 
 
 section.side-menu .share{
+    background-color: #ffca28;
+    margin-top: auto;
     border-top: 2px solid whitesmoke;
     padding: 10px 20px 60px 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 5px;
 }
 
 div.image-div{
@@ -273,10 +273,6 @@ div.image-div{
         margin: auto;
         color: white;
         font-size: 4vw;
-    }
-
-    .share{
-        border-top: 2px solid whitesmoke;
     }
 
     section.features{

@@ -95,25 +95,21 @@
 section.d-main-section{
     padding-bottom: 50px;
     margin-left: 70px;
-     /* I will it  remove later */
 }
 
 section.d-main-section-new-margin{
     margin-left: 170px;
 }
 
-section.side-menu .links-div ul{
-    padding: 10px 30px 10px 20px;
-    height: 100%;
-    gap: 20px;
-}
-
 section.side-menu .share{
+    padding-bottom: 40px;
     gap: 5px;
 }
 
+a
 
 .icon-labels {
+    font-size: 15px;
     opacity: 0;
 }
 
@@ -160,3 +156,6 @@ nav span.material-symbols-outlined, nav a i{
     font-size: 35px;
 }
 
+.bx, span.material-symbols-outlined{
+    font-size: 1.6rem;
+}
