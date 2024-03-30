@@ -10,6 +10,7 @@ function expandSidePanel(){
     if (dashboardSidePanel.style.width === '90px' ) {
         dashboardSidePanel.style.width = '250px'
         mainLayout.classList.toggle("d-main-section-new-margin")
+        document.getElementById('title-logo').style.display = 'flex'
         Array.from(document.querySelectorAll('.icon-labels')).forEach(
             (labels) => {
                 labels.style.opacity = '100%'
@@ -19,6 +20,7 @@ function expandSidePanel(){
     } else{
         dashboardSidePanel.style.width = '90px'
         mainLayout.classList.remove("d-main-section-new-margin")
+        document.getElementById('title-logo').style.display = 'flex'
         Array.from(document.querySelectorAll('.icon-labels')).forEach(
             (labels) => {
                 labels.style.opacity = '0'
