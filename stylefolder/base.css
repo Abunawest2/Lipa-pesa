@@ -178,12 +178,6 @@ section.side-menu{
     flex-direction: column;
 }
 
-section.side-menu .share{
-    
-}
-
-
-
 .small-screens-links{
     padding-bottom: 10px;
     display: flex;
