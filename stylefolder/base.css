@@ -204,7 +204,10 @@ section.side-menu .links-div ul{
     gap: 20px;
 }
 
-
+div.image-div h3{
+    color: white;
+    font-size: 20px;
+}
 
 section.side-menu .share{
     background-color: #ffca28;
@@ -265,7 +268,7 @@ div.image-div{
     div.image-div h3{
         margin: auto;
         color: white;
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     section.features{

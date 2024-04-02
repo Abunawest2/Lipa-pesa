@@ -13,6 +13,7 @@ document.addEventListener('click', (event) => {
         dashboardSidePanel.style.width = '70px'
         mainLayout.classList.remove("d-main-section-new-margin")
         document.getElementById('title-logo').style.display = 'none'
+        document.getElementById('small-screen-app-title').style.display = 'block';
         Array.from(document.querySelectorAll('.icon-labels')).forEach(
             (labels) => {
                 labels.style.opacity = '0'
