@@ -2,14 +2,14 @@
     padding: 0;
     margin: 0;
 }
-body{
+/* body{
     max-height: 100vh;
-}
+} */
 
 #main-dashboard{
-    margin-top: 0;
+    margin: 10px;
     display: flex;
-    height: 72vh;
+    height: 75vh;
 }
 
 #main-dashboard .div{
@@ -112,13 +112,11 @@ body{
     height: auto;
     width: 70px;
     padding: 0 0;
-    /* border-right: 1px solid black; */
+    border-right: 1px solid black;
     display: flex;
-    overflow-y: auto;
 }
 
 section.d-main-section{
-    padding-bottom: 50px;
     margin-left: 70px;
 }
 
@@ -127,7 +125,7 @@ section.d-main-section-new-margin{
 }
 
 section.side-menu .share{
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
     gap: 5px;
 }
 
