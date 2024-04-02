@@ -3,18 +3,38 @@
     margin: 0;
 }
 
+#main-dashboard{
+    display: flex;
+    height: calc(75vh - 50px);
+}
 
-.dashboard {
-    max-width: 75%;
+#main-dashboard .div{
     margin: auto;
+    padding: 20px;
+    min-width: 75%;
+    border-radius: 30px;
+}
+
+.balance-info {
+    margin: 0 auto 20px auto;
     background-color: #f3d677; /* Light yellow background color */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    box-shadow: 2px 5px 20px rgba(180, 180, 180, 0.9); /* Soft shadow effect */
 }
 
-.dashboard h1 {
+.balance-info h1 {
     color: #333; /* Dark text color */
+}
+
+.Initiate-transaction{
+    box-shadow: 2px 5px 20px rgba(180, 180, 180, 0.9);
+    border-radius: 10px;
+    background-color: #f3d677;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .account-info {
@@ -26,8 +46,7 @@
 
 .actions {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    gap: 40px;
 }
 
 .actions button {
@@ -38,6 +57,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
 }
 
 .actions button:hover {
@@ -47,9 +67,12 @@
 
 @media screen and (max-width: 630px) {
 
-    
+    .actions {
+        display: flex;
+        gap: 10px;
+    }
 
-    .dashboard{
+    .balance-info{
         height: fit-content;
     }
 
@@ -68,7 +91,7 @@
         font-size: 10px;
     }
 
-    .dashboard{
+    .balance-info{
         height: fit-content;
     }
 
@@ -143,7 +166,7 @@ a
     /* background-color: aliceblue; */
     color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
-    position: absolute;
+    position: fixed;
     top: 65px;
     left: 62px;
     font-size: 30px;

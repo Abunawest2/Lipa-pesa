@@ -9,7 +9,7 @@ body {
     font-style: normal;
     text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #edfcff;
 }
 
 /* Header and div Section */
@@ -26,7 +26,6 @@ header{
 }
 
 nav{
-    
     padding: 7px 30px 7px 20px;
     position: sticky;
     top: 0;
