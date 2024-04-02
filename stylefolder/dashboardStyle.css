@@ -2,10 +2,14 @@
     padding: 0;
     margin: 0;
 }
+body{
+    max-height: 100vh;
+}
 
 #main-dashboard{
+    margin-top: 0;
     display: flex;
-    height: calc(75vh - 50px);
+    height: 72vh;
 }
 
 #main-dashboard .div{
@@ -59,7 +63,7 @@
 }
 
 .actions button:hover {
-    background-color: #ffca28; /* Darker yellow on hover */
+    background-color: #ffd968; /* Darker yellow on hover */
 }
 
 
