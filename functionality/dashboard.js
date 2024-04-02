@@ -2,7 +2,9 @@ const menuIcon = document.getElementById("switchIcon");
 const dashboardSidePanel = document.getElementById("left-side-dashboard");
 const mainLayout = document.getElementById("main-layout");
 
-console.log(mainLayout);
+Array.from(document.getElementsByTagName('nav')).forEach(nav => {
+    nav.style.borderLeft = '1px solid black';
+});
 
 menuIcon.addEventListener('click', expandSidePanel)
 document.addEventListener('click', (event) => {

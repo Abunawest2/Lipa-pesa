@@ -9,7 +9,6 @@ const main_layout = document.getElementById("main-layout");
 const heading2 = document.querySelectorAll('.benefit-headings')
 const benefit = document.querySelectorAll('.benefit');
 
-console.log(benefit);
 
 Array.from(heading2).forEach((heading) =>{
     heading.style.fontSize = '24px'
