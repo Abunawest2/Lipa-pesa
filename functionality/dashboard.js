@@ -57,3 +57,28 @@ function expandSidePanel(){
     }
 }
 
+// Notification icon listener
+
+console.log(document.getElementById('notifications'));
+
+document.getElementById('alert-bell').addEventListener('click', () => {
+
+    if (document.getElementById('notifications').style.display === 'none') {
+        document.getElementById('notifications').style.display = 'flow-root';
+    } else{
+        document.getElementById('notifications').style.display = 'none';
+    }
+    
+    
+})
+
+document.getElementById('notification-arrowback').addEventListener('click', () => {
+
+    if (document.getElementById('notifications').style.display === 'none') {
+        document.getElementById('notifications').style.display = 'flow-root';
+    } else{
+        document.getElementById('notifications').style.display = 'none';
+    }
+    
+    
+})

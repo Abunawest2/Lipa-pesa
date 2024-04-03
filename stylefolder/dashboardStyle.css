@@ -165,20 +165,31 @@ a
 #switchIcon{
     /* background-color: aliceblue; */
     color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
     position: fixed;
     top: 65px;
     left: 62px;
     font-size: 30px;
 }
 
-#Profile-icon{
-    color: white;
-}
-nav span.material-symbols-outlined, nav a i{
-    font-size: 35px;
+/* #Profile-icon{
+    cursor: pointer;
+} */
+
+.material-symbols-outlined {
+    cursor: pointer;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 100,
+    'GRAD' 0,
+    'opsz' 24
 }
 
-.bx, span.material-symbols-outlined{
-    font-size: 1.6rem;
+nav span.material-symbols-outlined{
+    font-size: 40px;
+    color: white;
+    
 }
+
+
+/* Notifications drop-down */
+

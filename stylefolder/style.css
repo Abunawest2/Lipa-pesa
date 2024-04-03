@@ -319,32 +319,7 @@ footer {
         background-color: #f9f7f7; /* Light gray background color */
     }
     
-    .notifications {
-        max-width: 800px;
-        margin: 0 auto;
-    }
     
-    .notifications h1{
-        margin-bottom: 20px;
-    }
-    .notification {
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        padding: 10px;
-        margin-bottom: 20px;
-        background-color: #fff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    
-    .notification .date {
-        font-weight: bold;
-        color: #333;
-        margin-bottom: 5px;
-    }
-    
-    .notification .message {
-        color: #666;
-    }
 
     /* SETTING STYLING */
     
