@@ -146,6 +146,7 @@ main{
 
 .cta-button:hover {
     background-color: #000099; /* Darker blue */
+    transition: background-color 250ms ease-in;
 }
 
 /* Benefits section styles */
