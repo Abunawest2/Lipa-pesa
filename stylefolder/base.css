@@ -12,6 +12,14 @@ body {
     background-color: #edfcff;
 }
 
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 24
+}
+
 /* Header and div Section */
 
 header{
@@ -59,8 +67,22 @@ ul li{
     padding: 0 5px;
 }
 
-.small-screens > *:hover{
-    color:#dfc1c1;
+nav span.material-symbols-outlined::after{
+   content: ' ';
+   display: block;
+   background-color: rgb(0, 0, 0);
+   width: 100px;
+   height: 2px;
+   transform: scaleX(0.0);
+}
+
+nav span.material-symbols-outlined:hover, nav span.material-symbols-outlined:hover::after{
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 400ms ease-in-out;
+    font-variation-settings: 'wght' 700, 'GRAD' 200;
 }
 
 .benefits-heading.font-size {
@@ -74,14 +96,15 @@ ul li{
 }
 
 span.material-symbols-outlined{
-    font-size: 30px;
+    font-size: 35px;
 }
 
 nav span.material-symbols-outlined{
+    position: relative;
     cursor: pointer;
-    font-size: 35px;
+    font-size: 50px;
     color: white;
-    
+    font-variation-settings: 'wght' 200;
 }
 
 /* Main Section for Index.html page */
@@ -188,6 +211,7 @@ section.side-menu{
 }
 
 .small-screens-links{
+    position: relative;
     padding-bottom: 10px;
     display: flex;
     align-items: center;
@@ -195,14 +219,13 @@ section.side-menu{
     gap: 5px;
 }
 
+
 h5{
     padding-left: 8px;
 }
 
-.small-screens-list:hover, .share a:hover{
+.small-screens-links:hover{
     border-bottom: 2px solid #006e00;
-    
-    
 }
 
 
@@ -304,9 +327,20 @@ footer{
     color: black;
     float: left;
     cursor: pointer;
+    padding: 2px 5px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 200,
+    'opsz' 24 ;
 }
 
-
+#notification-arrowback:hover{
+    background-color: #225220;
+    padding: 2px 5px;
+    border-radius: 10px;
+    transition: background-color 250ms ease-out 350ms;
+}
 
 .notifications h1{
     margin-bottom: 20px;
@@ -342,6 +376,26 @@ footer{
     body {
         padding-bottom: 0;
     }
+
+    span.material-symbols-outlined{
+        font-size: 25px;
+    }
+
+    nav span.material-symbols-outlined{
+        cursor: pointer;
+        font-size: 35px;
+        color: white;
+        
+    }
+
+    nav span.material-symbols-outlined::after{
+        content: ' ';
+        display: block;
+        background-color: rgb(0, 0, 0);
+        width: 55px;
+        height: 2px;
+        transform: scaleX(0.0);
+     }
 
     nav{
         height: 50px;
