@@ -67,22 +67,28 @@ ul li{
     padding: 0 5px;
 }
 
-nav span.material-symbols-outlined::after{
-   content: ' ';
-   display: block;
-   background-color: rgb(0, 0, 0);
-   width: 100px;
-   height: 2px;
-   transform: scaleX(0.0);
+.links a{
+    padding-bottom: 5px;
 }
 
-nav span.material-symbols-outlined:hover, nav span.material-symbols-outlined:hover::after{
+.links a:hover{
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    transition: color 250ms ease-in;
+}
+
+.small-screens-links:hover{
+    color: rgb(0, 0, 0);
+    transition: color 250ms ease-in;
+}
+
+
+nav span.material-symbols-outlined:hover{
     color: rgb(0, 0, 0);
     font-weight: bolder;
     transform: scaleX(1);
-    transform-origin: left;
-    transition: transform 400ms ease-in-out;
     font-variation-settings: 'wght' 700, 'GRAD' 200;
+    transition: color 10ms ease-in;
 }
 
 .benefits-heading.font-size {
@@ -122,6 +128,12 @@ main{
     padding: 0 10px;
 }
 
+.features{
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 2px 5px 20px rgba(180, 180, 180, 0.993);
+}
+
 .features h1 {
     
     font-size: 36px;
@@ -151,17 +163,22 @@ main{
 
 /* Benefits section styles */
 .benefits {
-    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin: 30px 0;
+    border-radius: 10px;
+    /* box-shadow: 2px 5px 20px rgba(180, 180, 180, 0.993); */
 }
 
 .benefit {
     flex: 1;
-    margin: 0 20px;
-    max-width: 300px;
+    margin: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 20px rgba(180, 180, 180, 0.993);
 }
+
 
 .benefit img {
     width: 100px;
@@ -225,14 +242,9 @@ h5{
     padding-left: 8px;
 }
 
-.small-screens-links:hover{
-    border-bottom: 2px solid #006e00;
-}
-
 
 section.side-menu .links-div ul{
-    padding: 10px 10px 0 20px;
-    height: 100%;
+    padding: 10px 10px 10px 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -367,6 +379,81 @@ footer{
 
 /* End of Notificationa */
 
+/* Settings Page */
+
+.settings {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 20px rgba(180, 180, 180, 0.993);
+}
+
+.settings h1 {
+    margin-bottom: 10px;
+}
+
+.setting {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 25px;
+    padding: 20px;
+    box-shadow: 2px 5px 20px rgba(180, 180, 180, 0.993);
+}
+
+.setting h2 {
+    color: #333; /* Dark text color */
+    margin-bottom: 10px;
+}
+
+.setting p {
+    color: #666; /* Gray text color */
+    margin-bottom: 15px;
+}
+
+.setting button {
+    background-color: #0070ba; /* Blue background color for buttons */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.setting button:hover {
+    background-color: #005b91; /* Darker blue on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Medium and small screen */
@@ -437,16 +524,14 @@ footer{
         padding: 25px;
         box-shadow: 2px 5px 20px rgba(180, 180, 180, 0.993);
     }
-    section.benefits{
-        flex-wrap: wrap;
-        border-radius: 10px;
-        padding: 25px 0 10px 0;
+
+    .benefits{
         box-shadow: 2px 5px 20px rgba(180, 180, 180, 0.993);
     }
+    
     div.benefit{
         border-radius: 10px;
         box-shadow: 2px 5px 20px rgba(180, 180, 180, 0.993);
-        padding: 10px;
         margin-bottom: 20px;
     }
 
@@ -484,3 +569,6 @@ footer{
     }
 
 }
+
+
+

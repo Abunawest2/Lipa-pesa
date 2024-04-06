@@ -1,6 +1,7 @@
 const menuIcon = document.getElementById("switchIcon");
 const dashboardSidePanel = document.getElementById("left-side-dashboard");
 const mainLayout = document.getElementById("main-layout");
+const more_services = document.querySelector('#more-service-ul')
 
 Array.from(document.getElementsByTagName('nav')).forEach(nav => {
     nav.style.borderLeft = '1px solid black';
@@ -16,12 +17,15 @@ document.addEventListener('click', (event) => {
         mainLayout.classList.remove("d-main-section-new-margin")
         document.getElementById('title-logo').style.display = 'none'
         document.getElementById('small-screen-app-title').style.display = 'block';
+        more_services.style.display = 'none'
+        document.getElementById('expand_more').style.rotate = '0deg'
         Array.from(document.querySelectorAll('.icon-labels')).forEach(
             (labels) => {
                 labels.style.opacity = '0'
 
             }
         )
+        
     }
 });
 
@@ -54,12 +58,28 @@ function expandSidePanel(){
 
             }
         )
+        more_services.style.display = 'none'
+        document.getElementById('expand_more').style.rotate = '0deg'
     }
 }
 
-// Notification icon listener
 
-console.log(document.getElementById('notifications'));
+
+document.querySelector('#more-service-ul').style.display = 'none'
+
+document.getElementById('more-services-id').addEventListener('click', () => {
+    if(more_services.style.display === 'none') {
+        more_services.style.display = 'flow-root'
+        document.getElementById('expand_more').style.rotate = '180deg'
+    } else {
+        more_services.style.display = 'none'
+        document.getElementById('expand_more').style.rotate = '0deg'
+    }
+
+    
+})
+
+// Notification icon listener
 
 document.getElementById('alert-bell').addEventListener('click', () => {
 

@@ -3,111 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Settings - LipaPesa</title>
-    <link rel="stylesheet" href="./Styles/Style.css">
+    <link rel="stylesheet" href="../stylefolder/base.css">
+    <link rel="stylesheet" href="../stylefolder/dashboardStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Settings</title>
+    <style>
+
+    </style>
 </head>
-<style>
-    /* Main styles */
-
-.settings {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.settings h1 {
-    margin-bottom: 10px;
-}
-
-.setting {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.setting h2 {
-    color: #333; /* Dark text color */
-    margin-bottom: 10px;
-}
-
-.setting p {
-    color: #666; /* Gray text color */
-    margin-bottom: 15px;
-}
-
-.setting button {
-    background-color: #0070ba; /* Blue background color for buttons */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.setting button:hover {
-    background-color: #005b91; /* Darker blue on hover */
-}
-
-</style>
 <body>
-    <header class="banner">
-        <a href="./index.html"><img src="/logoLP.png" alt="LOGO"></a>
-    </header>
-    <header>
-        <div class="logo">
-            <a href="dashboard.html"><img class="image-logo logo" src="/logoLP.png" alt="LipaPesa"></a>
-        </div>
-        <nav id="icons-nav" class="menu-links">
-            <ul id="iconsImage">
-                <li><a href="../pages/notification.html"><img class="image-logo" src="/notification.png" alt="Notification"></a></li>
-                <li><a href="setting.html"><img class="image-logo" src="/settings.png" alt="settings"></a></li>
-                <li>
-                    <a href="#drop" onclick="dropDownDisplay"><img class="image-logo" src="/User.png" alt="Profile"></a>
-                    <div class="dropdown-content" id="drop">
-                        <a href="logout.html">Logout</a>
-                        <a href="update-profile.html">Update Profile</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Dividing Big Screen on Top and small screen Below -->
     
-    <main>
-        <section class="settings">
-            <h1>Settings</h1>
-            <div class="setting">
-                <h2>Account Settings</h2>
-                <p>Manage your account information and preferences.</p>
-                <button>Edit Account</button>
+    <section id="dashboard" class="dashboard-section1">
+        <section id="left-side-dashboard" class="left-side dashboard-side-panel">
+            <div class="image-div d-image-div">
+                <img src="../images/logoLP.png" alt="" width="50px"><span id="title-logo"><h3>LIPAPESA</h3></span>
             </div>
-            <div class="setting">
-                <h2>Notification Settings</h2>
-                <p>Manage your notification preferences.</p>
-                <button>Edit Notifications</button>
-            </div>
-            <div class="setting">
-                <h2>Privacy Settings</h2>
-                <p>Manage your privacy preferences.</p>
-                <button>Edit Privacy</button>
-            </div>
-            <div class="setting">
-                <h2>Security Settings</h2>
-                <p>Manage your security preferences.</p>
-                <button>Edit Security</button>
-            </div>
-            <div class="setting">
-                <h2>Language Settings</h2>
-                <p>Manage your language preferences.</p>
-                <button>Edit Language</button>
-            </div>
+            <section class="side-menu">
+                <div class="links-div">
+                    <ul class="big-screen">
+                        <li class="small-screens-list">
+                            <a class="small-screens-links" href="../pages/dashboard.html">
+                                <span class="material-symbols-outlined">
+                                    home
+                                </span>
+                                <h5 class="icon-labels">Home</h5>
+                            </a>
+                        </li>
+                        <li class="small-screens-list">
+                            <a class="small-screens-links" href="#benefits">
+                                <span class="material-symbols-outlined">
+                                    payments
+                                </span>
+                                <h5 class="icon-labels">Payment</h5>
+                            </a>
+                        </li>
+                        <li class="small-screens-list">
+                            <a class="small-screens-links" href="#footer">
+                                <span class="material-symbols-outlined">
+                                    currency_exchange
+                                </span>
+                                <h5 class="icon-labels">Forex</h5>
+                            </a>
+                        </li>
+
+                        <li class="small-screens-list">
+                            <a class="small-screens-links" href="#footer">
+                                <span class="material-symbols-outlined">
+                                    account_balance
+                                </span>
+                                <h5 class="icon-labels">Visit Bank</h5>
+                            </a>
+                        </li>
+
+                        <li class="small-screens-list">
+                            <a class="small-screens-links" href="#features">
+                                <span class="material-symbols-outlined">
+                                    linked_services
+                                </span>
+                                <h5 class="icon-labels">Services</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="share">
+                    <a class="small-screens-links" href="../pages/index.html">
+                        <span class="material-symbols-outlined" style="rotate: 180deg;">
+                            logout
+                        </span>
+                        <h5 class="icon-labels">Log Out</h5>
+                    </a>
+                    
+                    <a class="small-screens-links" href="#footer">
+                        <span class="material-symbols-outlined">
+                            share
+                        </span>
+                        <h5 class="icon-labels">Share App</h5>
+                    </a>
+
+                </div>
+            </section>
         </section>
-    </main>
-    
-    <footer id="footer">
-        <p>&copy; 2024 LipaPesa App. All rights reserved.</p>
-    </footer>
+        <section id="main-layout" class="main-section d-main-section">
+
+            
+
+            <i class="fa-solid fa-angle-right" id="switchIcon"></i>
+
+            <nav class="small-screens">
+                <a href="../pages/profile.html">
+                    <span class="material-symbols-outlined" id="Profile-icon">
+                        account_circle
+                    </span>
+                </a>
+                <a href=""><h1 id="small-screen-app-title" class="app-title">LIPAPESA</h1></a>
+                <span class="material-symbols-outlined" id="alert-bell">
+                    circle_notifications
+                </span>
+            </nav>
+
+            <section class="notifications popping-notification" id="notifications">
+                <span class="material-symbols-outlined" id="notification-arrowback">
+                    arrow_back
+                </span>
+                <h1>Notifications</h1>
+                <div class="notification">
+                    <p class="date">2024-03-15</p>
+                    <p class="message">Your payment of $50.00 to John Doe was successful.</p>
+                </div>
+                <div class="notification">
+                    <p class="date">2024-03-14</p>
+                    <p class="message">You have a new message from Jane Smith.</p>
+                </div>
+                <!-- More notifications can be added here -->
+            </section>
+
+            <main>
+                <section class="settings">
+                    <h1>Settings</h1>
+                    <div class="setting">
+                        <h2>Account Settings</h2>
+                        <p>Manage your account information and preferences.</p>
+                        <button>Edit Account</button>
+                    </div>
+                    <div class="setting">
+                        <h2>Notification Settings</h2>
+                        <p>Manage your notification preferences.</p>
+                        <button>Edit Notifications</button>
+                    </div>
+                    <div class="setting">
+                        <h2>Privacy Settings</h2>
+                        <p>Manage your privacy preferences.</p>
+                        <button>Edit Privacy</button>
+                    </div>
+                    <div class="setting">
+                        <h2>Security Settings</h2>
+                        <p>Manage your security preferences.</p>
+                        <button>Edit Security</button>
+                    </div>
+                    <div class="setting">
+                        <h2>Language Settings</h2>
+                        <p>Manage your language preferences.</p>
+                        <button>Edit Language</button>
+                    </div>
+                </section>
+            </main>
+        
+            <footer id="footer">
+                <p>&copy; 2024 LipaPesa App. All rights reserved.</p>
+            </footer>
+
+        </section>
+    </section>
+
+    <script src="../functionality/dashboard.js"></script>
 </body>
 </html>
