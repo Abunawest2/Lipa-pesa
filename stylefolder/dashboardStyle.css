@@ -181,13 +181,17 @@ section.side-menu .share{
 
 /* More services drop down */
 ul#more-service-ul{
+    background-color: hsla(120, 60%, 30%, 0.9);
+    font-size: 20px;
     border-radius: 5px;
     padding: 10px;
-    font-size: 20px;
-    background-color: hsla(120, 64%, 27%, 0.5);
     display: flex;
     transform-origin: top;
-    transition: transform 250ms ease-in;
+    transition: all 250ms ease-in;
+}
+
+li#more-services-id.services-class{
+    /* background-color: rgba(0, 0, 0, 0.507); */
 }
 
 li.more-services{

@@ -11,9 +11,11 @@ menuIcon.addEventListener('click', expandSidePanel)
 
 document.getElementById('more-services-id').addEventListener('click', () => {
     if(more_services.style.transform === 'scaleY(0)') {
+        document.getElementById('more-services-id').classList.toggle('services-class')
         more_services.style.transform = 'scaleY(1)'
         document.getElementById('expand_more').style.rotate = '180deg'
     } else {
+        document.getElementById('more-services-id').classList.toggle('services-class')
         more_services.style.transform = 'scaleY(0)'
         document.getElementById('expand_more').style.rotate = '0deg'
     }
@@ -32,7 +34,7 @@ document.addEventListener('click', (event) => {
         document.getElementById('small-screen-app-title').style.display = 'block';
         more_services.style.transform = 'scaleY(0)'
         document.getElementById('expand_more').style.rotate = '0deg'
-        
+        document.getElementById('more-services-id').classList.remove('services-class')
         Array.from(document.querySelectorAll('.icon-labels')).forEach(
             (labels) => {
                 // labels.style.opacity = '0'
@@ -61,6 +63,7 @@ function expandSidePanel(){
                 labels.style.display = 'flex'
             }
         )
+
     } else{
         menuIcon.style.left = '62px'
         menuIcon.style.rotate = '360deg'
@@ -68,7 +71,7 @@ function expandSidePanel(){
         mainLayout.classList.remove("d-main-section-new-margin")
         document.getElementById('title-logo').style.display = 'none'
         document.getElementById('small-screen-app-title').style.display = 'block';
-        
+        document.getElementById('more-services-id').classList.remove('services-class')
         Array.from(document.querySelectorAll('.icon-labels')).forEach(
             (labels) => {
                 // labels.style.opacity = '0'
