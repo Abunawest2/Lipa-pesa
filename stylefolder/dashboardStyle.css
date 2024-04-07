@@ -181,7 +181,7 @@ section.side-menu .share{
 
 /* More services drop down */
 ul#more-service-ul{
-    background-color: hsla(120, 60%, 30%, 0.9);
+    background-color: hsla(120, 60%, 30%, 0.5);
     font-size: 20px;
     border-radius: 5px;
     padding: 10px;
