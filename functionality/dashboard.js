@@ -8,6 +8,19 @@ Array.from(document.getElementsByTagName('nav')).forEach(nav => {
 });
 
 menuIcon.addEventListener('click', expandSidePanel)
+
+document.getElementById('more-services-id').addEventListener('click', () => {
+    if(more_services.style.transform === 'scaleY(0)') {
+        more_services.style.transform = 'scaleY(1)'
+        document.getElementById('expand_more').style.rotate = '180deg'
+    } else {
+        more_services.style.transform = 'scaleY(0)'
+        document.getElementById('expand_more').style.rotate = '0deg'
+    }
+
+    
+})
+
 document.addEventListener('click', (event) => {
     const target = event.target;
     if (!target.closest('#dashboardSidePanel') && !target.closest('a') && target !== menuIcon) {
@@ -17,8 +30,9 @@ document.addEventListener('click', (event) => {
         mainLayout.classList.remove("d-main-section-new-margin")
         document.getElementById('title-logo').style.display = 'none'
         document.getElementById('small-screen-app-title').style.display = 'block';
-        more_services.style.display = 'none'
+        more_services.style.transform = 'scaleY(0)'
         document.getElementById('expand_more').style.rotate = '0deg'
+        
         Array.from(document.querySelectorAll('.icon-labels')).forEach(
             (labels) => {
                 // labels.style.opacity = '0'
@@ -26,6 +40,8 @@ document.addEventListener('click', (event) => {
 
             }
         )
+
+        
         
     }
 });
@@ -43,7 +59,6 @@ function expandSidePanel(){
         Array.from(document.querySelectorAll('.icon-labels')).forEach(
             (labels) => {
                 labels.style.display = 'flex'
-
             }
         )
     } else{
@@ -58,7 +73,6 @@ function expandSidePanel(){
             (labels) => {
                 // labels.style.opacity = '0'
                 labels.style.display = 'none'
-
             }
         )
         more_services.style.transform = 'scaleY(0)'
@@ -71,17 +85,7 @@ function expandSidePanel(){
 document.querySelector('#more-service-ul').style.transform = 'scaleY(0)'
 document.querySelector('#more-service-ul').style.display = 'flex'
 
-document.getElementById('more-services-id').addEventListener('click', () => {
-    if(more_services.style.transform === 'scaleY(0)') {
-        more_services.style.transform = 'scaleY(1)'
-        document.getElementById('expand_more').style.rotate = '180deg'
-    } else {
-        more_services.style.transform = 'scaleY(0)'
-        document.getElementById('expand_more').style.rotate = '0deg'
-    }
 
-    
-})
 
 // Notification icon listener
 

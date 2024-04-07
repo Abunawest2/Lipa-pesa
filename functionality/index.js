@@ -17,7 +17,7 @@ Array.from(heading2).forEach((heading) =>{
 // Event listener to toggle left_side_section visibility
 // Event listener to toggle left_side_section visibility
 iconId.addEventListener('click', () => {
-    if (left_side_section.style.display === 'none') {
+    if (left_side_section.style.width === '0%') {
         showLeftSide();
     } else {
         hideLeftSide();
@@ -34,7 +34,8 @@ document.addEventListener('click', (event) => {
 
 // Function to show left_side_section
 function showLeftSide() {
-    left_side_section.style.display = 'flex';
+    left_side_section.style.width = '40%';
+    left_side_section.style.overflow = 'auto';
     main_layout.classList.toggle('main-section-new-margin');
     document.getElementById('small-screen-app-title').style.display = 'none';
     Array.from(document.getElementsByTagName('nav')).forEach(nav => {
@@ -51,7 +52,8 @@ function showLeftSide() {
 
 // Function to hide left_side_section
 function hideLeftSide() {
-    left_side_section.style.display = 'none';
+    left_side_section.style.width = '0%';
+    left_side_section.style.overflow = 'hidden';
     main_layout.classList.remove('main-section-new-margin');
     document.getElementById('small-screen-app-title').style.display = 'block';
     Array.from(document.getElementsByTagName('nav')).forEach(nav => {

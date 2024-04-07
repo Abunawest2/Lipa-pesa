@@ -102,13 +102,13 @@ nav span.material-symbols-outlined:hover{
 }
 
 span.material-symbols-outlined{
-    font-size: 35px;
+    font-size: 30px;
 }
 
 nav span.material-symbols-outlined{
     position: relative;
     cursor: pointer;
-    font-size: 50px;
+    font-size: 40px;
     color: white;
     font-variation-settings: 'wght' 200;
 }
@@ -118,12 +118,12 @@ nav span.material-symbols-outlined{
 section.main-section{
     padding-bottom: 15px;
     margin-left: 0;
-    transition: margin-left 150ms ease-in;
+    transition: all 250ms ease-in;
 }
 
 section.main-section-new-margin{
     margin-left: 40%;
-    transition: all 150ms ease-in;
+    transition: all 250ms ease-in;
 }
 
 main{
@@ -218,12 +218,13 @@ i{
     left: 0;
     bottom: 0;
     height: 100vh;
-    width: 40%;
-    display: none;
+    width: 0%;
+    overflow: hidden;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     transform-origin: left;
-    transition: all 100ms ease-in;
+    transition: all 250ms ease-in;
 }
 
 
@@ -251,7 +252,7 @@ h5{
 
 
 section.side-menu .links-div ul{
-    padding: 10px 10px 10px 20px;
+    padding: 10px 20px 10px 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -259,7 +260,7 @@ section.side-menu .links-div ul{
 
 div.image-div h3{
     color: white;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 section.side-menu .share{
@@ -273,8 +274,8 @@ section.side-menu .share{
 }
 
 div.image-div{
-    height: 50px;
-    padding: 7px 30px 7px 12px;
+    /* height: 5px; */
+    padding: 7px 30px 10px 12px;
     background-color: #006e00;
     display: flex;
     box-shadow: 2px 2px 20px rgba(135, 230, 132, 0.8);
