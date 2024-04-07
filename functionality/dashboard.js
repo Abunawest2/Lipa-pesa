@@ -21,7 +21,8 @@ document.addEventListener('click', (event) => {
         document.getElementById('expand_more').style.rotate = '0deg'
         Array.from(document.querySelectorAll('.icon-labels')).forEach(
             (labels) => {
-                labels.style.opacity = '0'
+                // labels.style.opacity = '0'
+                labels.style.display = 'none'
 
             }
         )
@@ -41,7 +42,7 @@ function expandSidePanel(){
         document.getElementById('small-screen-app-title').style.display = 'none';
         Array.from(document.querySelectorAll('.icon-labels')).forEach(
             (labels) => {
-                labels.style.opacity = '100%'
+                labels.style.display = 'flex'
 
             }
         )
@@ -52,27 +53,30 @@ function expandSidePanel(){
         mainLayout.classList.remove("d-main-section-new-margin")
         document.getElementById('title-logo').style.display = 'none'
         document.getElementById('small-screen-app-title').style.display = 'block';
+        
         Array.from(document.querySelectorAll('.icon-labels')).forEach(
             (labels) => {
-                labels.style.opacity = '0'
+                // labels.style.opacity = '0'
+                labels.style.display = 'none'
 
             }
         )
-        more_services.style.display = 'none'
+        more_services.style.transform = 'scaleY(0)'
         document.getElementById('expand_more').style.rotate = '0deg'
     }
 }
 
 
 
-document.querySelector('#more-service-ul').style.display = 'none'
+document.querySelector('#more-service-ul').style.transform = 'scaleY(0)'
+document.querySelector('#more-service-ul').style.display = 'flex'
 
 document.getElementById('more-services-id').addEventListener('click', () => {
-    if(more_services.style.display === 'none') {
-        more_services.style.display = 'flow-root'
+    if(more_services.style.transform === 'scaleY(0)') {
+        more_services.style.transform = 'scaleY(1)'
         document.getElementById('expand_more').style.rotate = '180deg'
     } else {
-        more_services.style.display = 'none'
+        more_services.style.transform = 'scaleY(0)'
         document.getElementById('expand_more').style.rotate = '0deg'
     }
 

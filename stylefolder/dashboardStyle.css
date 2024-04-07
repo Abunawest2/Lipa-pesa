@@ -118,14 +118,18 @@
     padding: 0 0;
     border-right: 1px solid black;
     display: flex;
+    transition: width 250ms ease-in;
 }
 
 section.d-main-section{
     margin-left: 70px;
+    transition: margin-left 250ms ease-in;
 }
 
 section.d-main-section-new-margin{
     margin-left: 170px;
+    transition: margin-left 250ms ease-in;
+    
 }
 
 section.side-menu .share{
@@ -136,7 +140,7 @@ section.side-menu .share{
 
 .icon-labels {
     font-size: 15px;
-    opacity: 0;
+    display: none;
 }
 
 
@@ -167,27 +171,33 @@ section.side-menu .share{
 
 #switchIcon{
     /* background-color: aliceblue; */
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0);
     position: fixed;
     top: 65px;
     left: 62px;
     font-size: 30px;
+    transition: left 250ms ease-in;
 }
 
 /* More services drop down */
 ul#more-service-ul{
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px;
     font-size: 20px;
-    display: flex;
-    gap: 30px;
     background-color: hsla(120, 64%, 27%, 0.5);
+    display: flex;
+    transform-origin: top;
+    transition: transform 250ms ease-in;
 }
 
 li.more-services{
     padding: 8px 0;
 }
 
-span#expand_more{
-    content: 'Hello';
+.h5-icon{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all 250ms ease-in;
 }

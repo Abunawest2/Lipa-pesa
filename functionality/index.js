@@ -36,7 +36,6 @@ document.addEventListener('click', (event) => {
 function showLeftSide() {
     left_side_section.style.display = 'flex';
     main_layout.classList.toggle('main-section-new-margin');
-    main_layout.classList.add('scrol');
     document.getElementById('small-screen-app-title').style.display = 'none';
     Array.from(document.getElementsByTagName('nav')).forEach(nav => {
         nav.style.borderLeft = '1px solid black';
@@ -54,7 +53,6 @@ function showLeftSide() {
 function hideLeftSide() {
     left_side_section.style.display = 'none';
     main_layout.classList.remove('main-section-new-margin');
-    main_layout.classList.remove('scrol');
     document.getElementById('small-screen-app-title').style.display = 'block';
     Array.from(document.getElementsByTagName('nav')).forEach(nav => {
         nav.style.borderLeft = 'none';

@@ -117,10 +117,13 @@ nav span.material-symbols-outlined{
 
 section.main-section{
     padding-bottom: 15px;
+    margin-left: 0;
+    transition: margin-left 150ms ease-in;
 }
 
 section.main-section-new-margin{
     margin-left: 40%;
+    transition: all 150ms ease-in;
 }
 
 main{
@@ -214,13 +217,16 @@ i{
     top: 0;
     left: 0;
     bottom: 0;
-    width: 40%;
     height: 100vh;
+    width: 40%;
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    overflow-y: auto;
+    transform-origin: left;
+    transition: all 100ms ease-in;
 }
+
+
 
 section.side-menu{
     flex: 1;
@@ -235,6 +241,7 @@ section.side-menu{
     align-items: center;
     width: 100%;
     gap: 5px;
+    transition: width 250ms ease-in;
 }
 
 
@@ -391,10 +398,10 @@ footer{
 
 .settings h1 {
     margin-bottom: 10px;
+    font-size: x-large;
 }
 
 .setting {
-    border: 1px solid #ccc;
     border-radius: 10px;
     margin: 25px;
     padding: 20px;
@@ -404,6 +411,7 @@ footer{
 .setting h2 {
     color: #333; /* Dark text color */
     margin-bottom: 10px;
+    font-size: large;
 }
 
 .setting p {
