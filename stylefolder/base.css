@@ -88,7 +88,7 @@ nav span.material-symbols-outlined:hover{
     font-weight: bolder;
     transform: scaleX(1);
     font-variation-settings: 'wght' 700, 'GRAD' 200;
-    transition: color 10ms ease-in;
+    /* transition: color 10ms ease-in; */
 }
 
 .benefits-heading.font-size {
