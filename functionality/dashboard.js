@@ -36,8 +36,8 @@ function moreservices() {
 }
 // hovering over side panel
 
-dashboardSidePanel.addEventListener('mouseover', hoverover)
-dashboardSidePanel.addEventListener('mouseleave', hoveroverout)
+// dashboardSidePanel.addEventListener('mouseover', hoverover)
+// dashboardSidePanel.addEventListener('mouseleave', hoveroverout)
 
 function hoverover(){
     if (dashboardSidePanel.style.width === '70px') {
