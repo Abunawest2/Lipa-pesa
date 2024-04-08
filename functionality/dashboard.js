@@ -126,21 +126,38 @@ function expandSidePanel(){
 
 document.getElementById('alert-bell').addEventListener('click', () => {
 
-    if (document.getElementById('notifications').style.display === 'none') {
-        document.getElementById('notifications').style.display = 'flow-root';
+    // if (document.getElementById('notifications').style.display === 'none') {
+    //     document.getElementById('notifications').style.display = 'flow-root';
+    // } else{
+    //     document.getElementById('notifications').style.display = 'none';
+    // }
+
+    if (document.querySelector('.notifications').style.transform === 'scaleY(0)') {
+        document.querySelector('.notifications').style.display = 'flow-root';
+        document.querySelector('.notifications').style.transform = 'scaleY(1)';
+        // document.getElementById('notifications').style.display = 'flow-root';
     } else{
-        document.getElementById('notifications').style.display = 'none';
+        // document.querySelector('.notifications').style.display = 'none';
+        document.querySelector('.notifications').style.transform = 'scaleY(0)';
+        // document.getElementById('notifications').style.display = 'none';
     }
     
     
 })
 
+
+// document.querySelector('.notifications').style.display = 'none';
 document.getElementById('notification-arrowback').addEventListener('click', () => {
 
-    if (document.getElementById('notifications').style.display === 'none') {
-        document.getElementById('notifications').style.display = 'flow-root';
+    if (document.querySelector('.notifications').style.transform === 'scaleY(0)') {
+        document.querySelector('.notifications').style.display = 'flow-root';
+        document.querySelector('.notifications').style.transform = 'scaleY(1)';
+        // document.getElementById('notifications').style.display = 'flow-root';
     } else{
-        document.getElementById('notifications').style.display = 'none';
+        // document.querySelector('.notifications').style.display = 'none';
+        document.querySelector('.notifications').style.transform = 'scaleY(0)';
+        document.querySelector('.notifications').style.transformOrigin = 'right'
+        // document.getElementById('notifications').style.display = 'none';
     }
     
     
