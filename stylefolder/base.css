@@ -304,23 +304,29 @@ footer{
     display: none;
     position: relative;
     position: fixed;
-    top: 60px;
+    top: 70px;
     right: 0;
     height: 70vh;
     max-width: 15rem;
-    /* z-index: 2; */
+    z-index: 2;
     background-color: #8ae587;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
 }
 
 .notifications h1::before{
-    position: absolute;
-    top: -8px;
+    position: fixed;
+    top: 60px;
     right: 35px;
     content: '';
     background-color: #8ae587;
+    /* background-color: #be0000; */
+    /* border-top: solid 25px black;
+    border-right: solid 25px black;
+    border-bottom: solid 25px black;
+    border-left: solid 25px black; */
     width: 25px;
     height: 25px;
     transform: rotate(40deg);
