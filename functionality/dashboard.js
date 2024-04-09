@@ -152,12 +152,8 @@ document.getElementById('notification-arrowback').addEventListener('click', () =
     if (document.querySelector('.notifications').style.transform === 'scaleY(0)') {
         document.querySelector('.notifications').style.display = 'flow-root';
         document.querySelector('.notifications').style.transform = 'scaleY(1)';
-        // document.getElementById('notifications').style.display = 'flow-root';
     } else{
-        // document.querySelector('.notifications').style.display = 'none';
         document.querySelector('.notifications').style.transform = 'scaleY(0)';
-        document.querySelector('.notifications').style.transformOrigin = 'right'
-        // document.getElementById('notifications').style.display = 'none';
     }
     
     
