@@ -88,6 +88,11 @@ function hideSidePanel(){
     document.getElementById('title-logo').style.display = 'none'
     document.getElementById('small-screen-app-title').style.display = 'block';
     document.getElementById('more-services-id').classList.remove('services-class')
+    document.querySelector('.account-info').firstElementChild.classList.remove('h2newsize')
+    document.querySelector('.account-info').lastElementChild.classList.remove('p-new-size')
+    Array.from(document.querySelector('.actions').children).forEach((buttonsize) => {
+        buttonsize.classList.remove('btn-newclass')
+    })
     Array.from(document.querySelectorAll('.icon-labels')).forEach(
         (labels) => {
             // labels.style.opacity = '0'
@@ -107,6 +112,11 @@ function expandSidePanel(){
     mainLayout.classList.toggle("d-main-section-new-margin")
     document.getElementById('title-logo').style.display = 'flex'
     document.getElementById('small-screen-app-title').style.display = 'none';
+    document.querySelector('.account-info').firstElementChild.classList.add('h2newsize')
+    document.querySelector('.account-info').lastElementChild.classList.add('p-new-size')
+    Array.from(document.querySelector('.actions').children).forEach((buttonsize) => {
+        buttonsize.classList.add('btn-newclass')
+    })
     Array.from(document.querySelectorAll('.icon-labels')).forEach(
         (labels) => {
             labels.style.display = 'flex'
@@ -158,3 +168,6 @@ document.getElementById('notification-arrowback').addEventListener('click', () =
     
     
 })
+
+console.log(document.querySelector('.actions').children);
+

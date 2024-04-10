@@ -92,6 +92,12 @@
 }
 
 @media screen and (max-width: 400px) {
+    h2.h2newsize{
+        font-size: 20px;
+    }
+    p.p-new-size{
+        font-size: 12px;
+    }
 
     i h5{
         font-size: 10px;
@@ -102,18 +108,23 @@
     }
 
     .actions {
-
         font-weight: bolder;
         flex-direction: column;
         width: 75%;
         margin: auto;
+    }
+    section.iniate-transaction{
+        margin: 0;
+    }
+    button.btn-newclass{
+        font-size: 8px;
     }
 }
 
 /* DASHBOARD SIDE BAR */
 
 .dashboard-side-panel{
-    height: auto;
+    height: 100vh;
     width: 70px;
     padding: 0 0;
     border-right: 1px solid black;
@@ -145,11 +156,14 @@ section.side-menu .share{
 
 
 
-.dashboard-side-panel > section.side-menu{
+section.side-menu{
     margin: 0;
     padding: 0;
     width: 100%;
-    /* gap: 5px; */
+    overflow-y: auto;
+}
+section.side-menu::-webkit-scrollbar{
+    width: 0px;
 }
 
 
