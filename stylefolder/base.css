@@ -291,7 +291,7 @@ footer{
     bottom: 0;
     right: 0;
     left: 0;
-    min-height: 50px;
+    max-height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
