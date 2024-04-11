@@ -171,7 +171,7 @@ li.more-services{
 }
 
 footer{
-    /* display: none; */
+    display: none;
 }
 
 @media screen and (max-width: 630px) {
