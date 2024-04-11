@@ -172,6 +172,10 @@ li.more-services{
     transition: all 250ms ease-in;
 }
 
+footer{
+    /* display: none; */
+}
+
 @media screen and (max-width: 630px) {
 
     .actions {
@@ -188,6 +192,10 @@ li.more-services{
         flex-direction: column;
         width: 75%;
         margin: auto;
+    }
+
+    div.share{
+        padding-bottom: 30px;
     }
 
 }
