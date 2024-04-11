@@ -96,7 +96,7 @@ section.d-main-section-new-margin{
 }
 
 section.side-menu .share{
-    /* padding-bottom: 40px; */
+    padding-bottom: 80px;
     gap: 5px;
 }
 
@@ -156,9 +156,7 @@ ul#more-service-ul{
     transition: all 250ms ease-in;
 }
 
-li#more-services-id.services-class{
-    /* background-color: rgba(0, 0, 0, 0.507); */
-}
+
 
 li.more-services{
     padding: 8px 0;
@@ -195,7 +193,7 @@ footer{
     }
 
     div.share{
-        padding-bottom: 30px;
+        /* padding-bottom: 70px; */
     }
 
 }
